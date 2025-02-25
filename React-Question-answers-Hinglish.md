@@ -25,5 +25,13 @@ Yeh features milkar React ko dynamic aur responsive web applications banane mein
 
 ## Q3: React Hooks kya hain aur inka upyog kyun kiya jata hai?
 
-<small>**Answer:** React Hooks aise functions hain jo aapko function components se React ke state aur lifecycle features mein "hook" karne ki suvidha dete hain. React version 16.8 mein introduce kiye gaye, Hooks bina class components likhe state aur anya React features ka upyog sambhav banate hain. Ye code ko simplify karte hain aur components ke beech stateful logic ke reuse ko promote karte hain. Commonly upyog hone wale Hooks mein `useState` state management ke liye aur `useEffect` side effects ko handle karne ke liye shamil hain.</small>
+<small>**Answer:** React Hook ek function hai jo functional components ko state aur lifecycle features use karne ki suvidha deta hai. Ye React 16.8 me introduce kiya gaya tha, jisse class components ki zaroorat khatam ho gayi aur code zyada simple aur readable ban gaya. Hooks state manage karne, side effects handle karne, aur reusability badhane me madad karte hain. Ye React development ko aur efficient aur flexible banate hain, saath hi backward compatibility bhi ensure karte hain. 🚀
+
+
+
+
+
+
+
+</small>
 
