@@ -21,3 +21,8 @@
 - **Flexibility and Modularity:** React's component-based architecture allows developers to build modular and maintainable code, making it flexible to use in various projects. [Source](https://legacy.reactjs.org/docs/design-principles.html)
 
 These features collectively contribute to React's efficiency and popularity in building dynamic and responsive web applications.</small>
+
+## Q3: What are React Hooks and why are they used?
+
+<small>**Answer:** React Hooks are functions that allow you to "hook into" React state and lifecycle features from function components. Introduced in React version 16.8, Hooks enable the use of state and other React features without writing class components. They simplify code and promote the reuse of stateful logic across components. Commonly used Hooks include `useState` for state management and `useEffect` for handling side effects.</small>
+
