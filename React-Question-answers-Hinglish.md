@@ -21,3 +21,9 @@
 - **Flexibility and Modularity:** React ka component-based architecture developers ko modular aur maintainable code banane ki suvidha deta hai, jisse yeh various projects mein flexible hota hai.
 
 Yeh features milkar React ko dynamic aur responsive web applications banane mein efficient aur lokpriya banate hain.</small>
+
+
+## Q3: React Hooks kya hain aur inka upyog kyun kiya jata hai?
+
+<small>**Answer:** React Hooks aise functions hain jo aapko function components se React ke state aur lifecycle features mein "hook" karne ki suvidha dete hain. React version 16.8 mein introduce kiye gaye, Hooks bina class components likhe state aur anya React features ka upyog sambhav banate hain. Ye code ko simplify karte hain aur components ke beech stateful logic ke reuse ko promote karte hain. Commonly upyog hone wale Hooks mein `useState` state management ke liye aur `useEffect` side effects ko handle karne ke liye shamil hain.</small>
+
