@@ -19,10 +19,9 @@ function fun() {
 }
 
 console.log(fun());
-
+```js
 ## Output:
-
-```js 
+ 
 * * * * * * * * * * 
 *                 * 
 *                 * 
