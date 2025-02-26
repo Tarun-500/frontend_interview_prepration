@@ -18,18 +18,4 @@ function fun() {
   return b;
 }
 
-console.log(fun());
-js```
-
-## Output:
- 
-* * * * * * * * * * 
-*                 * 
-*                 * 
-*                 * 
-*                 * 
-*                 * 
-*                 * 
-*                 * 
-*                 * 
-* * * * * * * * * * 
+console.log(fun()); 
