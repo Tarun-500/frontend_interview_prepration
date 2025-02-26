@@ -26,3 +26,17 @@ These features collectively contribute to React's efficiency and popularity in b
 
 <small>**Answer:** React Hooks are functions that allow you to "hook into" React state and lifecycle features from function components. Introduced in React version 16.8, Hooks enable the use of state and other React features without writing class components. They simplify code and promote the reuse of stateful logic across components. Commonly used Hooks include `useState` for state management and `useEffect` for handling side effects.</small>
 
+
+## Q4: What are the differences between functional and class components in React?
+
+**Answer:**
+ <small>
+In React, components can be created as either functional or class components.
+
+- **Functional Components:** These are simple JavaScript functions that accept props as arguments and return React elements. They do not have their own state or lifecycle methods.
+
+- **Class Components:** These are ES6 classes that extend from `React.Component`. They can have their own state and lifecycle methods, allowing for more complex logic and interactions.
+
+With the introduction of Hooks in React 16.8, functional components can now manage state and side effects, reducing the need for class components.
+ </small>
+ 
