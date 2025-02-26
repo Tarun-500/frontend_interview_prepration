@@ -19,7 +19,8 @@ function fun() {
 }
 
 console.log(fun());
-```js
+js```
+
 ## Output:
  
 * * * * * * * * * * 
