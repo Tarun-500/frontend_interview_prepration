@@ -25,13 +25,16 @@ Yeh features milkar React ko dynamic aur responsive web applications banane mein
 
 ## Q3: React Hooks kya hain aur inka upyog kyun kiya jata hai?
 
-<small>**Answer:** React Hook ek function hai jo functional components ko state aur lifecycle features use karne ki suvidha deta hai. Ye React 16.8 me introduce kiya gaya tha, jisse class components ki zaroorat khatam ho gayi aur code zyada simple aur readable ban gaya. Hooks state manage karne, side effects handle karne, aur reusability badhane me madad karte hain. Ye React development ko aur efficient aur flexible banate hain, saath hi backward compatibility bhi ensure karte hain. 🚀
+<small>**Answer:** React Hook ek function hai jo functional components ko state aur lifecycle features use karne ki suvidha deta hai. Ye React 16.8 me introduce kiya gaya tha, jisse class components ki zaroorat khatam ho gayi aur code zyada simple aur readable ban gaya. Hooks state manage karne, side effects handle karne, aur reusability badhane me madad karte hain. Ye React development ko aur efficient aur flexible banate hain, saath hi backward compatibility bhi ensure karte hain. 🚀 </small>
 
 
+## Q4: Funcitonal or class component mein kya difference hai?
+<small> 
+React mein, components ko functional ya class components ke roop mein banaya ja sakta hai.
 
+- **Functional Components:** Yeh simple JavaScript functions hote hain jo props ko argument ke roop mein lete hain aur React elements return karte hain. Inke paas apna state ya lifecycle methods nahi hote.
 
+- **Class Components:** Yeh ES6 classes hain jo `React.Component` se extend hoti hain. Inke paas apna state aur lifecycle methods hote hain, jo zyada complex logic aur interactions ko sambhalte hain.
 
-
-
-</small>
-
+React 16.8 mein Hooks ke aane se, ab functional components bhi state aur side effects manage kar sakte hain, jisse class components ki zarurat kam ho gayi hai.
+</small> 
