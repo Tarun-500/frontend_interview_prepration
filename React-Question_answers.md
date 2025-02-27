@@ -39,4 +39,22 @@ In React, components can be created as either functional or class components.
 
 With the introduction of Hooks in React 16.8, functional components can now manage state and side effects, reducing the need for class components.
  </small>
+
+
+ ## Q5: What are the props, states, and differences between props and state in React?
+<small>
+In React, **props** (short for "properties") and **state** are both used to manage data within components, but they serve different purposes and have distinct characteristics.
+
+- **Props:** Props are read-only attributes passed from a parent component to a child component. They allow data to flow down the component hierarchy and are immutable, meaning a child component cannot modify its own props. This ensures a unidirectional data flow, making the application predictable and easier to debug.
+
+- **State:** State is a mutable data structure that holds information about the component's current situation. It is managed within the component itself and can change over time, usually in response to user actions or network responses. When a component's state changes, React re-renders the component to reflect the updated state.
+
+**Key Differences:**
+
+- **Mutability:** Props are immutable; state is mutable.
+
+- **Ownership:** Props are controlled by the parent component; state is managed within the component.
+
+- **Purpose:** Props allow data to be passed to child components; state is used to manage dynamic data within a component.
+</small>
  
