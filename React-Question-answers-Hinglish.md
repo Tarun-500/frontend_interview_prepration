@@ -38,3 +38,22 @@ React mein, components ko functional ya class components ke roop mein banaya ja 
 
 React 16.8 mein Hooks ke aane se, ab functional components bhi state aur side effects manage kar sakte hain, jisse class components ki zarurat kam ho gayi hai.
 </small> 
+
+
+## Q5: Props aur state kya hote hain React mein? Dono mein kya antar hai? 
+
+ <small>
+React mein, **props** (yaani "properties") aur **state** dono hi components ke data ko manage karne ke liye use hote hain, lekin inka upyog aur visheshtayein alag-alag hain.
+
+- **Props:** Props wo read-only attributes hain jo ek parent component se child component ko pass kiye jate hain. Ye data ko component hierarchy mein neeche ki taraf flow karne dete hain aur immutable hote hain, yaani child component apne props ko modify nahi kar sakta. Isse ek unidirectional data flow ensure hota hai, jo application ko predictable aur debug karne mein aasan banata hai.
+
+- **State:** State ek mutable data structure hai jo component ki vartaman sthiti ki jankari rakhta hai. Yeh component ke andar hi manage hota hai aur samay ke saath badal sakta hai, aam taur par user ke actions ya network responses ke response mein. Jab ek component ka state badalta hai, React component ko dobara render karta hai taaki updated state reflect ho sake.
+
+**Mukhya Antar:**
+
+- **Mutability (Badalne ki kshamata):** Props immutable hain; state mutable hai.
+
+- **Ownership (Adhikar):** Props parent component dwara control kiye jate hain; state component ke andar manage hota hai.
+
+- **Purpose (Uddeshya):** Props data ko child components tak pahunchane ke liye use hote hain; state component ke andar dynamic data ko manage karne ke liye use hota hai.
+</small>
