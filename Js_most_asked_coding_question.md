@@ -21,3 +21,29 @@ console.log(fun(arr, "tarun"))
 
 ### Output :
  <small> My name is jain </small>
+
+ ## 2. Reserve the given string :
+### Input:
+
+```
+const arr = "Hello World";
+function fun(arr) {
+    let ans = "";
+    for (let i = arr.length - 1; i >= 0; i--) {
+        ans += arr[i]; // Appending characters one by one
+    }
+    return ans;
+}
+console.log(fun(arr)); // Output: "dlroW olleH"
+ ``` 
+```
+const arr = "Hello World";
+function reverseString(str) {
+    return str.split("").reverse().join("");
+}
+console.log(reverseString("Hello World"));  
+ ```
+### Output :
+ <small> dlroW olleH </small>
+
+
