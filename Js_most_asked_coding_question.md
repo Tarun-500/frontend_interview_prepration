@@ -46,4 +46,24 @@ console.log(reverseString("Hello World"));
 ### Output :
  <small> dlroW olleH </small>
 
+ ## 3. Reserve the given number :
+ 
+```
+const a  = 12345
+
+function fun(a){
+
+    let ans  =  0
+ 
+    while(a > 0){
+        ans  += a%10 
+        a = Math.floor(a/10)
+    }
+    
+    return ans
+}
+
+console.log(fun(a)) 
+```
+
 
