@@ -46,7 +46,7 @@ console.log(reverseString("Hello World"));
 ### Output :
  <small> dlroW olleH </small>
 
- ## 3. Reserve the given number :
+ ## 3. SUm of the given number :
  
 ```
 const a  = 12345
