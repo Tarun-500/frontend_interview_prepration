@@ -46,7 +46,7 @@ console.log(reverseString("Hello World"));
 ### Output :
  <small> dlroW olleH </small>
 
- ## 3. SUm of the given number :
+ ## 3. Sum of the given number :
  
 ```
 const a  = 12345
@@ -63,7 +63,25 @@ function fun(a){
     return ans
 }
 
-console.log(fun(a)) 
+console.log(fun(a))  //Output : 15
 ```
+## 4. Reverse the given number: 
+```
+const a  = 12345
 
+function fun(a){
+
+    let ans  =  0
+ 
+    while(a > 0){
+       let b = a%10  
+        ans = ans * 10 + b 
+        a = Math.floor(a/10)
+    }
+    
+    return ans
+}
+
+console.log(fun(a))  // Output : 54321
+```
 
