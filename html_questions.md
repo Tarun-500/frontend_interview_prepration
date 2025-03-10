@@ -78,3 +78,52 @@ Yeh 60% completed task show karega. Jaise jaise value update hoti hai, progress 
 <output id="result">50</output>
 ```
 </small>
+
+
+### 33) HTML5 Important Questions & Answers
+
+#### 1️⃣ What’s new in HTML5?
+**Answer:**
+HTML5 introduced several new features to enhance web development. Some of the key improvements are:
+
+#### **1. New Semantic Elements**
+- `<header>` – Defines the header section of a page.
+- `<footer>` – Represents the footer section.
+- `<article>` – Contains independent, self-contained content.
+- `<section>` – Groups related content together.
+- `<aside>` – Used for side content like ads or sidebars.
+- `<nav>` – Defines navigation links.
+- `<figure>` & `<figcaption>` – Used for images with captions.
+
+#### **2. Improved Forms & Input Types**
+- **New Input Types:** `email`, `url`, `date`, `time`, `number`, `range`, `search`, `tel`, `color`.
+- **New Attributes:** `placeholder`, `autofocus`, `required`, `pattern`, `autocomplete`, `formnovalidate`.
+- **Datalist Support:** `<datalist>` provides input suggestions.
+- **Output Element:** `<output>` is used for displaying calculation results.
+
+#### **3. Enhanced Multimedia Support**
+- `<audio>` – Embeds audio files directly.
+- `<video>` – Allows video playback without Flash.
+- `<track>` – Adds subtitles or captions.
+- `<source>` – Supports multiple media formats for compatibility.
+
+#### **4. Advanced Graphics & Animations**
+- `<canvas>` – Used for drawing graphics and animations using JavaScript.
+- **SVG (Scalable Vector Graphics)** – Defines vector-based graphics that scale without losing quality.
+- **WebGL** – Enables 3D graphics rendering.
+
+#### **5. New JavaScript APIs**
+- **Geolocation API** – Retrieves the user's location.
+- **Web Storage API (LocalStorage & SessionStorage)** – Stores data in the browser without cookies.
+- **Drag & Drop API** – Enables drag-and-drop functionality.
+- **WebSockets** – Allows real-time communication between client and server.
+- **Web Workers** – Runs background scripts without blocking the main thread.
+- **Fetch API** – Provides a modern way to make HTTP requests (replacing AJAX).
+
+#### **6. Mobile-Friendly Features**
+- **Viewport Meta Tag** – Helps create responsive designs for different screen sizes.
+- **Touch Event API** – Detects touch gestures for mobile interaction.
+- **Responsive Image Support** – Uses `<picture>` and `srcset` to load different images based on screen size.
+
+---
+
