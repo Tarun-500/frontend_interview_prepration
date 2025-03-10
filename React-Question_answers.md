@@ -184,6 +184,13 @@ useMemo: Stores the result of a function to save time on repeated calculations. 
  
 
 
+1) What is the React? and what is the role of react in software development?
+2) What are the key features of React Js?
+3) useCallBack function
+4) instance method
+
+5) Event Handling
+
 
 
 
