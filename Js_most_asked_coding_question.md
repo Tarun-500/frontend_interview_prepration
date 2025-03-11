@@ -84,4 +84,21 @@ function fun(a){
 
 console.log(fun(a))  // Output : 54321
 ```
+## 5. Sum of the given number: 
+```
+const arr = 12345
+function fun(str){
+    let b = 0
+    while(str > 0){
+        let d = str % 10
+        b += d
+       str = Math.floor(str/10)
+    }
+    return b
+}
+
+console.log(fun(arr))
+
+```
+
 
