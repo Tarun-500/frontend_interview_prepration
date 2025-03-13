@@ -10,10 +10,9 @@
 </details>
 
 
-
  
 <details>
-  <summary> <h2>  What are the Key Features of TypeScript?</h2> </summary>
+  <summary> <h2>  What are the Key Features of TypeScript? </h2> </summary>
 
 ```ts
 // 1. Static Typing & Interfaces
@@ -47,9 +46,11 @@ let move: Direction = Direction.Up;
 // 6. Compiles to JavaScript
 // TypeScript transpiles to plain JavaScript, making it work everywhere JS does.
 
+```
+
  
 <details>
-  <summary> <h2> What is the Difference Between TypeScript and JavaScript? </h2> </summary>
+  <summary> <h2>  What is the Difference Between TypeScript and JavaScript? </h2></summary>
 
 ```ts
 // 1. TypeScript is a Superset of JavaScript
@@ -78,4 +79,6 @@ function identity<T>(value: T): T { return value; }
 
 // 5. Better Tooling & Error Handling
 // TypeScript provides better IntelliSense, autocompletion, and early error detection.
+
+
 
