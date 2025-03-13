@@ -46,8 +46,9 @@ let move: Direction = Direction.Up;
 // 6. Compiles to JavaScript
 // TypeScript transpiles to plain JavaScript, making it work everywhere JS does.
 
-```
-
+ 
+</details>
+ ```
  
 <details>
   <summary> <h2>  What is the Difference Between TypeScript and JavaScript? </h2></summary>
@@ -80,5 +81,7 @@ function identity<T>(value: T): T { return value; }
 // 5. Better Tooling & Error Handling
 // TypeScript provides better IntelliSense, autocompletion, and early error detection.
 
+</details>
 
+```
 
