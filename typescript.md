@@ -46,3 +46,36 @@ let move: Direction = Direction.Up;
 
 // 6. Compiles to JavaScript
 // TypeScript transpiles to plain JavaScript, making it work everywhere JS does.
+
+ 
+<details>
+  <summary> <h2> What is the Difference Between TypeScript and JavaScript? </h2> </summary>
+
+```ts
+// 1. TypeScript is a Superset of JavaScript
+// TypeScript extends JavaScript with additional features like static typing.
+
+let message: string = "Hello"; // ✅ TypeScript
+// let message = "Hello";      // ✅ JavaScript (No type enforcement)
+
+// 2. Static Typing vs. Dynamic Typing
+// JavaScript is dynamically typed, while TypeScript enforces static types.
+
+let num: number = 10;  // ✅ TypeScript (Static Typing)
+// let num = 10;       // ✅ JavaScript (Dynamic Typing)
+
+// 3. Compilation
+// TypeScript needs to be compiled to JavaScript before execution.
+
+tsc index.ts   // ✅ Compiles TypeScript to JavaScript
+
+// 4. Interfaces & Generics (TypeScript Only)
+interface User {
+  name: string;
+  age: number;
+}
+function identity<T>(value: T): T { return value; }
+
+// 5. Better Tooling & Error Handling
+// TypeScript provides better IntelliSense, autocompletion, and early error detection.
+
