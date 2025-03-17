@@ -1,37 +1,69 @@
-1 ) Write a nested loop to print a 3x3 grid of numbers,
-2 ) Use a for loop to reverse an array [1, 2, 3, 4]
-3 ) Write a while loop that logs numbers from 1 to 100 divisible by 5.
-4 ) Write a function to find the maximum of two numbers.
-5 ) Create a function that takes a number and returns its factorial. using - loop and recursion
-6 ) Write a function that accepts a string and returns its reverse.
-7 ) Create a function to find the largest number in an array.
-8 ) Write a function that converts string to kebab—case
+### 1 ) Write a nested loop to print a 3x3 grid of numbers,
+### 2 ) Use a for loop to reverse an array [1, 2, 3, 4]
+### 3 ) Write a while loop that logs numbers from 1 to 100 divisible by 5.
+### 4 ) Write a function to find the maximum of two numbers.
+### 5 ) Create a function that takes a number and returns its factorial. using - loop and recursion
+### 6 ) Write a function that accepts a string and returns its reverse.
+### 7 ) Create a function to find the largest number in an array.
+### 8 ) Write a function that converts a string to kebab—case
+<details>
+  <summary> <h3>  Why does .call() not work with the arrow function in this code? </h3>   </summary>
+  <small>
+    
+```
+const name = "John";
+this.name = "Jane";
+const printName = () => {
+console.log(this.name);
+}
+printName.call({name: "Joe"});
+  ```
+ Arrow functions do not have their own this; they inherit it from their surrounding scope. Since printName is an arrow function, .call({ name: "Joe" }) does not change this, so it prints "Jane".
+  </small>
+ 
+</details>
+
+<details>
+  <summary> <h3>  Cut array length  </h3>   </summary>
+  <small>
+    
+```
+ const arr = [1, 345, 50, 20, 36, 7855, 59, 455, 5]
+arr.length = 5
+console.log('arr.length', arr)
+  ``` 
+  </small>
+</details>
+
+
+<details>
+  <summary> <h3>  sum of array element -  </h3>   </summary>
+  <small>
+    
+```
+  const a = [1,2,3,4,5,6,7,8,9,10]
+  const sum = a.reduce((a, b) => a + b ,0) // 0 is a initial value
+  console.log('sum', sum)
+  ``` 
+  </small>
+</details>
+
+<details>
+  <summary> <h3> remove duplicate values - </h3>   </summary>
+  <small>
+    
+```
+  const a = [1,1,1,2,2,2,3,4,5,6,6,7,8,9,9,10,10]
+  const duplicate = [...new Set(a)]
+  console.log('duplicate', duplicate)
+  ``` 
+  </small>
+</details>
+
+
 
 
 <script>
-  //   // 1)
-  //   const name = "John";
-  //    this.name = "Jane";
-  //     const printName = () => {
-  //   console.log(this.name);
-  //   }
-  //   printName.call({name: "Joe"});
-
-  // //   2) Cut array length -
-  // const arr = [1, 345 , 50, 20 , 36 , 7855, 59, 455, 5]
-  // arr.length = 5
-  // console.log('arr.length', arr)
-
-  // // 3) sum of array element -
-  // const a = [1,2,3,4,5,6,7,8,9,10]
-  // const sum = a.reduce((a, b) => a + b ,0) // 0 is a initial value
-  // console.log('sum', sum)
-
-  // // 4) remove duplicate values -
-  // const a = [1,1,1,2,2,2,3,4,5,6,6,7,8,9,9,10,10]
-  // const duplicate = [...new Set(a)]
-  // console.log('duplicate', duplicate)
-
   // 5)
   // let x=10;
   // // x = (x++, x) //output 11
