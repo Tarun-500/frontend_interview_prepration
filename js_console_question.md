@@ -5,7 +5,7 @@
 5 ) Create a function that takes a number and returns its factorial. using - loop and recursion
 6 ) Write a function that accepts a string and returns its reverse.
 7 ) Create a function to find the largest number in an array.
-8 ) Write a function that convert string to kebab—case
+8 ) Write a function that converts string to kebab—case
 
 
 <script>
