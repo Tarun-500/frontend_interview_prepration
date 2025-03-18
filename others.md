@@ -7,3 +7,9 @@ A Superset Means:
 ✅ It adds extra features that improve functionality.
 ✅ Code from the subset still works inside the superset.
 Example - TypeScript, C++, SCSS, and MySQL
+
+
+### List all the official HTTP methods?
+<small>
+Get, Post, Put, Patch, Delete, Option, Head, Trace, Connect 
+</small>
