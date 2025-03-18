@@ -22,11 +22,41 @@
 ### 22) server-sent events in HTML5?
 ### 23) MathML element in HTML5?
 ### 24) HTML Graphics (Using canvas)
-### 25) Output represents the result of a calculation? Could you explain its attributes?
-### 26) Microdata in HTML5  (use for seo with itemscope  itemprop and itemtype attribute)
+### 25) Output represents the result of a calculation. Could you explain its attributes?
+### 26) Microdata in HTML5  (use for SEO with itemscope  itemprop and itemtype attribute)
 ### 27) Web Storage in HTML5 (storage api - localstorage, sessionStorage)
-### 28) Svg vs canvas
-### 29) Which elements are used to represent output in HTML? Explain their use.
+### 28) Svg vs canvas?
+### 29) What is the difference between <section> and <div> in HTML
+### 30) Thematic block (example- section, article, header, footer, nav, aside)
+### 31) What is the difference between <em> and <strong> tags in HTML?
+### 31) What is the difference between <i> and <em> tags in HTML?
+### 32) What is the difference between localStorage and sessionStorage in HTML?
+### 33) What is the difference between async and defer in HTML?
+
+
+
+<details>
+ <summary> <h3> 29) What is the difference between  <code>  div  </code> and <code>  span  </code> ? </h3> </summary>
+  <small>
+  <strong>  div (block level element) </strong>  - example -  p, h, div, section, article, footer, header, 
+
+  <strong>  span (inline  element) </strong> - example - span, a, table, img, ul, form, 
+  </small> 
+</details>
+
+
+<details>
+ <summary> <h3> 30)   What is the difference between id and class attributes in HTML? </h3> </summary>
+  <small>
+  <strong>  id (Identifier): </strong>  A unique identifier for a single HTML element. It must be unique within the page.
+ 
+
+  <strong>  class   (Class Name):  </strong> Used to apply styles to multiple elements that share the same class.
+  </small> 
+</details>
+
+
+### 30) Which elements are used to represent output in HTML? Explain their use.
 <small> ✅ Answer:
 In HTML, there are 4 main output elements:
 **` <output> `** – Used to display the result of a calculation.
