@@ -7,3 +7,4 @@
 #### 7) map VS foreach
 #### 8) async await VS promises 
 #### 9) Difference between debouncing and throttling.
+#### 10) Shallow Copy vs Deep Copy in JavaScript
