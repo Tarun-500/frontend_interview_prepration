@@ -57,3 +57,10 @@ React mein, **props** (yaani "properties") aur **state** dono hi components ke d
 
 - **Purpose (Uddeshya):** Props data ko child components tak pahunchane ke liye use hote hain; state component ke andar dynamic data ko manage karne ke liye use hota hai.
 </small>
+
+## Q6: React Fiber kya hia? 
+
+ <small> Ye react k 16 version m introduce hua tha, 
+ React Fiber ek naya reconciliation engine hai jo React me asynchronous rendering ko support karta hai. Yeh UI ko faster aur smooth banata hai by handling high-priority updates pehle aur baaki rendering ko efficiently manage karta hai. 🚀
+ 
+</small>
