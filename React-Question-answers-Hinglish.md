@@ -62,5 +62,9 @@ React mein, **props** (yaani "properties") aur **state** dono hi components ke d
 
  <small> Ye react k 16 version m introduce hua tha, 
  React Fiber ek naya reconciliation engine hai jo React me asynchronous rendering ko support karta hai. Yeh UI ko faster aur smooth banata hai by handling high-priority updates pehle aur baaki rendering ko efficiently manage karta hai. 🚀
- 
+</small>
+
+## Q7: Stateless Component kya hote hia ?
+ <small>   
+  Stateless Component ek aisa React component hota hai jo kisi bhi internal state ko manage nahi karta. Yeh s irf props receive karke UI render karta hai aur kisi bhi state ko modify nahi karta. Yeh functional components hote hain jo lightweight aur fast hote hain. 
 </small>
