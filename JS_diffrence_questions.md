@@ -6,3 +6,4 @@
 #### 6) Call by value VS call by refrence
 #### 7) map VS foreach
 #### 8) async await VS promises 
+#### 9) Difference between debouncing and throttling.
