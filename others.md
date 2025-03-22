@@ -13,3 +13,8 @@ Example - TypeScript, C++, SCSS, and MySQL
 <small>
 Get, Post, Put, Patch, Delete, Option, Head, Trace, Connect 
 </small>
+
+### List of all type API's?
+<small>
+Rest, SOAP, GraphQL, Websoket 
+</small>
