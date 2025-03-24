@@ -23,20 +23,7 @@ for (let i = 0; i < 5; i++) {
 
 console.log(i); // This will throw an error because 'i' is not defined outside the loop
 
-
-## 5) Null vs undefined
-
-Undefined: It means a variable has been declared but hasn't been assigned a value yet. Essentially, it represents the absence of any value. It's like an empty container that hasn't been filled yet.
-If you declare a variable x but don't assign any value to it, its value will be undefined.
-let  x;  
-console.log(x); // output : undefined
-
-Null: It's explicitly assigned by a programmer to represent an empty or non-existent value. It's like saying "there is nothing here on purpose."
-For example:
-
-If you assign null to a variable y, you're explicitly saying that y has no value.
-let  y = null;
-console.log(y); // output: null
+ 
 
 
 ## 6) this keyword use in js  -  this in JavaScript refers to the current object or context. 
@@ -131,8 +118,6 @@ console.log(result); // Output: ["fox"]
 15 ) Enhanced Object Literals - mean that if you have a property named name and a variable with the same name, you can assign the variable directly without repeating the property name, like name instead of name: name."
 
 
-16) State Lifting - in React means a child component sending data to its parent component using a callback function.
-
 
 17) Call bind apply - 
 
@@ -157,8 +142,6 @@ console.log(result); // Output: ["fox"]
 26) JavaScript is dynamically typed, not strictly typed. in typescript strictly typed here we have to give typeof every declarations
 
 27) Stack memory (Primitive) it's do copy, Heap memory (Non-Primitive) it's do not copy it will give reference
-
-28) Shallow copy v/s Deep copy
  
 
 30) Prototype 
