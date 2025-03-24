@@ -1,2 +1,2 @@
-## 1. What are porps type in react js?
-## 2. SSR (server side rendring) vs CSR (client side rendring) in React?
+## 1. What are props types in React JS?
+## 2. SSR (server-side rendering) vs CSR (client-side rendering) in React?
