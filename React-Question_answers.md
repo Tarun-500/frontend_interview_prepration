@@ -59,6 +59,12 @@ In React, **props** (short for "properties") and **state** are both used to mana
 </small>
 
 
+ ## Q6 : State Lifting - 
+<small>
+in React means a child component sending data to its parent component using a callback function.
+</small>
+
+
 
 
 
