@@ -1,4 +1,4 @@
-## 1) lexical scoping - 
+## 1) Lexical scoping - 
 
 
 ## 2) Dynamic Scoping - In dynamic scoping, the search for a variable is based on its name. If it's not found in the current block, then it goes up the chain of function calls until it finds a variable with that name. So, instead of looking at where the variable is defined, it looks at where the function that's currently running was called from.
@@ -6,10 +6,10 @@
 
 ## 3) Lexical VS Dynamic Scope :
 
-   dynamic scoping, when a function is called, it looks for variables not where they are defined, but where the function was called from. This is different from lexical scoping, where variables are searched for based on where they are written in the code. So, even though they're both ways to find variables, they work differently.
+   Dynamic scoping, when a function is called, looks for variables not where they are defined but where the function was called from. This is different from lexical scoping, where variables are searched for based on where they are written in the code. So, even though they're both ways to find variables, they work differently.
 
 
-## 4) Block Scop - Block scope means variables can be used only within the particular block of code where they are defined, such as within a function or loop, and cannot be accessed outside of it.
+## 4) Block Scope - Block scope means variables can be used only within the particular block of code where they are defined, such as within a function or loop, and cannot be accessed outside of it.
 
 function blockScope(){
     let a = 50 
@@ -159,8 +159,7 @@ console.log(result); // Output: ["fox"]
 27) Stack memory (Primitive) it's do copy, Heap memory (Non-Primitive) it's do not copy it will give reference
 
 28) Shallow copy v/s Deep copy
-
-29) Slice v/s Splice - slice give always new array and splice change original array
+ 
 
 30) Prototype 
 
@@ -186,6 +185,6 @@ console.log(result); // Output: ["fox"]
 49) bind, call, apply in JavaScript
 50) async/await in JavaScript
 51) Type Conversion in JavaScript - using - * / with string like ("1" - 1) = 0
-51) Type casting in JavaScript - making any string into number aur number to string is type casting or change any type to other type is type casting
+51) Type casting in JavaScript - making any string into a number or number to a string is type casting or changing any type to another type is type casting
 
-52) unary oprater
+52) unary operator
