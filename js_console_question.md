@@ -675,4 +675,51 @@ console.log('arr.length', arr)
   // }
 
   console.log(countVowels(a));
+
+
+
+let num  = 8 
+let res = 4 + num++; 
+console.log(res);  // output: 12
+console.log(num);  // output: 9
+
+  
+
+const arr  =  ["My", " Name", " is", " Tarun"]
+const  str =  arr[0] + arr[1] +  arr[2] + arr[3]
+console.log(str) // output: My Name is Tarun
+
+
+
+const a = 100;
+ if(true){
+  const a = 500;
+ }
+ console.log(a) // output: 100
+
+
+
+let count = 1 
+let list = ["T", "A", "R", "U", "N"]
+console.log(list[count++]) // output: A
+console.log(list[++count]) // output: R
+
+
+let n = 1 
+n = n++ + ++n + n++;
+console.log(n)
+
+
+let num  = [1,2,3,4]
+num[num.length - 1]++
+console.log(num)
+
+
+
+ let name = "tarun"
+ 
+ if(name == "tarun"){
+     name == "jain"
+ } 
+ console.log(name)
 </script>
