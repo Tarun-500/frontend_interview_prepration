@@ -73,7 +73,7 @@ console.log('arr.length', arr)
   // x = (x+=20) // output 30
   // console.warn(x);
 
-  // 6) Convert this string into array -
+  // 6) Convert this string into an array -
   // let str = "Hello, My Self Tarun shah"
   // let arr = str.split(" ") // split in words
   // let arr = str.split("") // split in single character
@@ -91,7 +91,7 @@ console.log('arr.length', arr)
   //   str = str.substring(15, 21);
   //   console.log("str -", str);
 
-  //   // 9) show only tarun shah from this string -
+  //   // 9) show only Tarun Shah from this string -
   //   let str = "Hello, My Self Tarun shah";
   //   str = str.split(" ");
   //   str = str.slice(3);
