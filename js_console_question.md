@@ -98,6 +98,13 @@ console.log('arr.length', arr)
   //   str = str.join(" ");
   //   console.log("str -", str);
 
+    // // 11) show only tarun from this string -
+  // let str = "Hello, My Self Tarun shah";
+  // str = str.split(" ");
+  // str = str.filter((item) => item == "Tarun")
+  // console.log('str', str)
+
+  
   // //10) reverse this str -
   // let str = "Hello, My Self Tarun shah";
   // str = str.split('').reverse().join("")
@@ -110,11 +117,6 @@ console.log('arr.length', arr)
   //   }
   // console.log(a)
 
-  // // 11) show only tarun from this string -
-  // let str = "Hello, My Self Tarun shah";
-  // str = str.split(" ");
-  // str = str.filter((item) => item == "Tarun")
-  // console.log('str', str)
 
   //   //   12) remove extra spaces from this string -
   //   let str = "         Hello            ";
