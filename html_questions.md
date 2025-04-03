@@ -560,3 +560,266 @@ HTML ek **markup language** hai jo **webpages ka structure** define karti hai, *
 
  </details>
  
+
+
+
+
+<details>
+  <summary> <h3> 45)  Inline, Inline-Block, and Block Elements in HTML </h3></summary>
+ 
+HTML has **three main display types**:
+1. **Inline** → Stays in the same line, does not start a new line.
+2. **Inline-Block** → Stays in the same line but allows width & height adjustments.
+3. **Block** → Takes up the full width and starts on a new line.
+
+---
+
+  🔹 **2. Inline Elements**
+  
+  ✅ Takes only as much space as needed.
+  ✅ Does **not** start a new line.
+  ❌ Cannot change height & width.
+  
+  #### **✅ Example:**  
+  ```html
+  <p>This is <span style="background-color: yellow;">inline</span> text.</p>
+  ```
+  ✔ `span` is an **inline element**, so the next text stays on the same line.
+  
+  #### **✅ Common Inline Elements:**  
+  `<a>, <span>, <strong>, <em>, <label>, <img>`  
+
+  🔹 **2. Inline-Block Elements**
+  
+  ✅ Stays in the same line like inline elements.
+  ✅ Allows setting **width & height**.
+  
+  #### **✅ Example:**  
+  ```html
+  <span style="display: inline-block; width: 100px; height: 50px; background-color: lightblue;">Inline-Block</span>
+  ```
+  ✔ Now, `span` is **inline-block**, so width & height will work.
+  
+  #### **✅ Common Inline-Block Elements:**  
+  `<input>, <button>` (by default), or any element with `display: inline-block;`
+ 
+  🔹 **3. Block Elements** 
+  
+  ✅ Always starts **on a new line**.
+  ✅ Takes up **full width**.
+  ✅ Allows height & width changes.
+  
+  #### **✅ Example:**  
+  ```html
+  <div style="background-color: lightgreen; width: 200px; height: 50px;">Block Element</div>
+  ```
+  ✔ `div` is a **block element**, so it takes the full width and moves the next element to a new line.
+  
+  #### **✅ Common Block Elements:**  
+  `<div>, <p>, <h1> - <h6>, <section>, <article>, <form>`  
+
+
+  ### **✅ Conclusion**
+✔ **Inline** → Only takes necessary space, stays in the same line.
+✔ **Inline-Block** → Stays in the same line but allows width & height adjustments.
+✔ **Block** → Takes full width and starts on a new line.
+
+**Use the right element type for better webpage design! 🚀**
+
+</details>
+
+ 
+
+<details>
+ <summary> <h3> 46)  How Does HTML Work? </h3></summary>
+  ❌ **No, HTML Does Not Need a Compiler!**
+  
+  HTML is a **markup language**, **not** a programming language. It does **not** need a compiler like C, Java, or Python. Instead, **browsers directly read and render** HTML.
+ 🔹 **How Does HTML Work?** 
+  
+  1️⃣ **You write HTML code** in a `.html` file.  
+  2️⃣ **A web browser (like Chrome, Firefox)** reads the file.  
+  3️⃣ **The browser interprets** the HTML and displays the web page.  
+
+  #### ✅ **Example:**
+  ```html
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <title>My Web Page</title>
+  </head>
+  <body>
+      <h1>Hello, World!</h1>
+  </body>
+  </html>
+  ```
+  ✔ You just **open this file in a browser**, and it works—**no compilation needed!**
+ 
+  <summary>🔹 **Why No Compiler?**</summary>
+  
+  ✔ **HTML is interpreted** by browsers, not compiled.  
+  ✔ **It is not a programming language**, so it doesn't create executable files.  
+  ✔ **Changes are instantly visible**—just refresh the page!  
+
+  
+### **✅ Conclusion**
+🚀 **HTML does not require a compiler** because browsers **directly interpret** and display it. Just write, save, and open in a browser! 🎉
+</details>
+
+
+
+
+
+<details>
+ <summary> <h3> 47)  Difference Between `window` and `document` in JavaScript </h3></summary>
+  🔹 **What is `window`?**
+  
+  ✅ `window` is the **global object** that represents the browser window.  
+  ✅ It includes **everything** related to the browser (like history, location, and alerts).  
+  
+  #### ✅ **Example:**
+  ```javascript
+  console.log(window.innerWidth); // Gets the browser window width
+  window.alert("Hello!"); // Shows an alert pop-up
+  ```
+  ✔ `window.innerWidth` gives the width of the browser window.  
+  ✔ `window.alert()` shows an alert box.
+
+  
+ 🔹 **What is `document`?** 
+  
+  ✅ `document` represents the **web page content (HTML & CSS)** inside the browser.  
+  ✅ It allows access to **HTML elements** like `<div>`, `<p>`, etc.  
+  
+  #### ✅ **Example:**
+  ```javascript
+  console.log(document.title); // Gets the title of the page
+  document.body.style.backgroundColor = "lightblue"; // Changes background color
+  ```
+  ✔ `document.title` gets the webpage title.  
+  ✔ `document.body.style.backgroundColor` changes the background color.
+  
+ 🔹 **Key Differences** 
+  
+  | Feature      | `window` | `document` |
+  |-------------|---------|------------|
+  | Represents  | Browser window | Web page (HTML) |
+  | Includes    | Browser properties like history, location, alert | HTML elements (DOM) |
+  | Example    | `window.innerWidth` (window size) | `document.getElementById()` (selects an element) |
+  | Usage      | Works with the whole browser | Works with webpage content |
+
+  ### **✅ Conclusion**
+✔ `window` → Represents the **browser window** (history, alert, location).  
+✔ `document` → Represents the **web page content** (HTML elements).  
+
+🚀 **Use `window` for browser-related tasks and `document` for webpage manipulation!**
+</details>
+
+
+ 
+
+<details>
+ <summary> <h3> 48) What is Web Accessibility? </h3> </summary>
+  
+**Web Accessibility means making websites usable for everyone, including people with disabilities.** The goal is to ensure that everyone can **access web content** without difficulties.
+  🔹 **Why is Web Accessibility Important?** 
+  
+  ✅ **Helps disabled users** (like blind, deaf, or people with motor disabilities) access websites.  
+  ✅ **Improves SEO** since accessible sites are easier for search engines to understand.  
+  ✅ **Legal compliance** – Many countries have laws requiring web accessibility (like ADA in the USA).  
+  ✅ **Enhances User Experience (UX)** for everyone.  
+
+  
+ 🔹 **How to Improve Web Accessibility?** 
+  
+  **1️⃣ Alt Text for Images:**  
+   - Adding `alt="image description"` helps **screen readers** describe images for blind users.  
+   - **Example:**  
+     ```html
+     <img src="photo.jpg" alt="A beautiful sunset over the ocean">
+     ```
+
+  **2️⃣ Keyboard Navigation:**  
+   - Every functionality should work **without a mouse**, using only the keyboard (Tab, Enter).  
+   - **Example:**  
+     ```html
+     <button tabindex="0">Click Me</button>
+     ```
+
+  **3️⃣ ARIA (Accessible Rich Internet Applications):**  
+   - Provides extra information for **screen readers** to improve accessibility.  
+   - **Example:**  
+     ```html
+     <button aria-label="Close Popup">X</button>
+     ```
+
+  **4️⃣ High Contrast Mode:**  
+   - Ensures **better visibility** for users with color blindness or weak eyesight.  
+   - **Example:**  
+     ```css
+     body { color: black; background-color: white; }
+     ```
+
+  **5️⃣ Captions & Transcripts for Videos:**  
+   - Provides text alternatives for **deaf users** who cannot hear the audio.  
+   - **Example:**  
+     ```html
+     <video controls>
+       <source src="video.mp4" type="video/mp4">
+       <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English">
+     </video>
+     ```
+   
+### **✅ Conclusion**
+✔ **Web accessibility is important for everyone** – disabled users, SEO, and better UX.  
+✔ **Using alt text, keyboard support, ARIA, high contrast, and captions can improve accessibility.**  
+✔ **An accessible website provides a better experience for all! 🚀**
+</details> 
+
+
+
+<details>
+ <summary> <h3> 49)  HTML `<template>` Tag - Easy Definition & Use </h3></summary>
+
+ <small>
+
+
+## **Definition**
+The `<template>` tag in HTML is a special container that holds HTML content but does not render it until JavaScript is used to insert it into the DOM.
+
+## **Why Use `<template>`?**
+- Improves performance by reducing unnecessary re-renders.
+- Allows reusable HTML structures.
+- Content inside `<template>` is ignored by the browser until needed.
+
+## **Example Usage**
+```html
+<template id="myTemplate">
+    <p>This is a hidden template!</p>
+</template>
+
+<button onclick="showTemplate()">Show Template</button>
+<div id="container"></div>
+
+<script>
+    function showTemplate() {
+        let template = document.getElementById("myTemplate");
+        let clone = template.content.cloneNode(true);
+        document.getElementById("container").appendChild(clone);
+    }
+</script>
+```
+
+## **Key Features**
+- **Not Rendered Initially:** Content inside `<template>` is not displayed until JavaScript activates it.
+- **Reusable:** One template can be used multiple times without repeating the HTML code.
+- **Efficient DOM Manipulation:** Helps optimize performance by reducing direct modifications to the DOM.
+
+## **Use Cases**
+- Dynamically adding elements (e.g., Todo lists, Shopping cart items).
+- Creating reusable components in vanilla JavaScript.
+- Loading HTML content only when needed for better performance.
+
+
+  </small>
+</details>
