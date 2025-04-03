@@ -7,7 +7,7 @@
 ### 7) HTML entities (Symbol like &nbsp, &copy, @quot)
  
 <details>
- <summary> 08) <h3>What is White Space in HTML?</h3> </summary> 
+ <summary> <h3> 08) What is White Space in HTML?</h3> </summary> 
 
 **White space** in HTML refers to **spaces, tabs, and new lines** that help structure the code but are usually ignored by the browser when displaying content.
 
@@ -62,6 +62,9 @@ p {
 ✅ **Conclusion:** White space helps structure HTML code but is usually ignored unless special techniques are used! 🚀
 
 </details>
+
+
+
 ### 9) Map in HTML (Using Coords and area tag)
 ### 10) Absolute URL (https://google.com) and relative URL (/img/user.jpg)
 ### 11) Use of tile tag - (for worked like tooltip while hovering)
@@ -136,7 +139,7 @@ worker.onmessage = function (event) {
 
 
 <details>
- <summary> 22)  <h3> Server-Sent Events (SSE) in HTML5 </h3></summary>
+ <summary> <h3>22) Server-Sent Events (SSE) in HTML5 </h3></summary>
  
 **Server-Sent Events (SSE)** allow a server to **send updates to the browser automatically** without the browser repeatedly requesting them.
 
@@ -261,7 +264,6 @@ This can be written in **MathML** inside an HTML page!
 ---
 
 ✅ **Conclusion:** MathML helps display **math formulas in web pages** just like text! 🚀
-
 </details>
 
 ### 24) HTML Graphics (Using canvas)
@@ -272,12 +274,12 @@ This can be written in **MathML** inside an HTML page!
 ### 29) What is the difference between <code> section </code> and <code>div </code> in HTML
 ### 30) Thematic block (example- section, article, header, footer, nav, aside)
 ### 31) What is the difference between <code> em </code> and <code> strong </code> tags in HTML?
-### 31) What is the difference between <code> i </code> and <code> em </code> tags in HTML?
-### 32) What is the difference between <code> localStorage </code> and <code>sessionStorage </code> in HTML?
-### 33) What is the difference between <code>async </code> and <code> defer </code> in HTML?
+### 32) What is the difference between <code> i </code> and <code> em </code> tags in HTML?
+### 33) What is the difference between <code> localStorage </code> and <code>sessionStorage </code> in HTML?
+### 34) What is the difference between <code>async </code> and <code> defer </code> in HTML?
 
 <details>
- <summary> <h3> 34)  What is `aria-label` in HTML and Why is it Used? </h3> </summary>
+ <summary> <h3> 35)  What is `aria-label` in HTML and Why is it Used? </h3> </summary>
 
 `aria-label` is an **ARIA (Accessible Rich Internet Applications) attribute** that provides a text description for screen readers when an element does not have visible text. It improves accessibility by making web content more readable for visually impaired users.
 
@@ -314,12 +316,12 @@ This can be written in **MathML** inside an HTML page!
 - Helps with **SEO and usability**.
 
 **🔹 Best Practice:** Use a visible `<label>` whenever possible. Use `aria-label` only when a visible label is not feasible.
-
 </details>
 
 
+
 <details>
- <summary> <h3> 29) What is the difference between  <code>  div  </code> and <code>  span  </code> ? </h3> </summary>
+ <summary> <h3> 36) What is the difference between  <code>  div  </code> and <code>  span  </code> ? </h3> </summary>
   <small>
   <strong>  div (block level element) </strong>  - example -  p, h, div, section, article, footer, header, 
 
@@ -329,27 +331,87 @@ This can be written in **MathML** inside an HTML page!
 
 
 <details>
- <summary> <h3> 30)   What is the difference between id and class attributes in HTML? </h3> </summary>
+ <summary> <h3> 37)   What is the difference between id and class attributes in HTML? </h3> </summary>
   <small>
   <strong>  id (Identifier): </strong>  A unique identifier for a single HTML element. It must be unique within the page.
- 
-
   <strong>  class   (Class Name):  </strong> Used to apply styles to multiple elements that share the same class.
   </small> 
 </details>
 
 
-### 30) Which elements are used to represent output in HTML? Explain their use.
-<small> ✅ Answer:
+
+<details>
+ <summary> <h3>38) Standard Mode vs Quirks Mode in HTML? </h3></summary>
+**🔹 Standard Mode** → The browser follows **modern HTML & CSS rules** correctly.  
+**🔹 Quirks Mode** → The browser behaves like **older versions** (before HTML5), causing inconsistencies.  
+
+---
+
+### **🛠 Real-Life Example**  
+Imagine you are designing a webpage:  
+
+✅ **Standard Mode:** The page looks the **same** in all modern browsers.  
+❌ **Quirks Mode:** The page looks **different** because the browser tries to mimic old behavior.  
+
+---
+
+### **✅ How to Enable Standard Mode?**  
+Use the **correct DOCTYPE** at the top of your HTML file:  
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Standard Mode Example</title>
+</head>
+<body>
+    <p>This page runs in Standard Mode!</p>
+</body>
+</html>
+```
+✅ **With `<!DOCTYPE html>`, the browser uses Standard Mode.**  
+
+---
+
+### **❌ What Triggers Quirks Mode?**  
+If **DOCTYPE is missing or incorrect**, the browser may switch to **Quirks Mode** and cause:  
+- **Incorrect layouts** (CSS issues).  
+- **Inconsistent box models** (padding/margins behave unpredictably).  
+- **Font & image size issues** (older rendering methods).  
+
+---
+
+### **🔹 How to Check Mode in a Browser?**  
+1️⃣ Open **DevTools (F12)** → **Console** → Type:  
+```js
+console.log(document.compatMode);
+```
+✔ If it shows `"CSS1Compat"`, it's **Standard Mode**.  
+✔ If it shows `"BackCompat"`, it's **Quirks Mode**.  
+
+---
+
+### **✅ Conclusion**  
+🔹 Always use `<!DOCTYPE html>` to ensure **modern, predictable** webpage rendering! 🚀
+</details>
+
+
+
+<details>
+ <summary> <h3>39)  Which elements are used to represent output in HTML? Explain their use. </h3></summary>
+ <small> ✅ Answer:
 In HTML, there are 4 main output elements:
 **` <output> `** – Used to display the result of a calculation.
 **` <progress> `** – Shows task completion percentage.
 **` <meter> `**  – Represents a value within a range (e.g., battery level).
 **` <input type="range"> `** – Allows users to select a value using a slider.
 </small>
+</details> 
+ 
 
-### 30) What is the difference between **`<output>`** and **`<meter>`**?
-<small>
+
+<details>
+ <summary> <h3> 40) What is the difference between **`<output>`** and **`<meter>`**? </h3></summary>
+  <small>
  ✅ Answer:
   
 **`<output>`** – Yeh kisi calculation ka final result show karta hai, jaise ki sum ya average.
@@ -367,10 +429,13 @@ Yahan <output> ek static result show kar raha hai.
 <meter> ek visual indicator provide kar raha hai jo value ke range ko dikhata hai.
 
 </small>
+</details> 
 
-### 31) How does **` <progress> `** work in HTML? Give an example.
-✅ Answer:
-<progress> element kisi task ka completion status show karta hai. Yeh mainly loading bars ya file upload progress dikhane ke liye use hota hai.
+
+<details>
+ <summary> <h3> 41)  How does **` <progress> `** work in HTML? Give an example. </h3> </summary>
+  <small>
+   <progress> element kisi task ka completion status show karta hai. Yeh mainly loading bars ya file upload progress dikhane ke liye use hota hai.
 
 ```
 <label>File Upload Progress:</label>
@@ -378,8 +443,13 @@ Yahan <output> ek static result show kar raha hai.
 ```
  
 Yeh 60% completed task show karega. Jaise jaise value update hoti hai, progress bar change hota hai.
+  </small>
+</details>
 
-### 32) How can we use **`<input type="range">`** with <output>?
+
+
+ <details>
+<summary> <h3> 42) How can we use **`<input type="range">`** with <output>? </h3> </summary>
 <small>
 ✅ Answer:
   
@@ -391,13 +461,13 @@ Yeh 60% completed task show karega. Jaise jaise value update hoti hai, progress 
 <output id="result">50</output>
 ```
 </small>
+ </details>
+ 
 
-
-### 33) HTML5 Important Questions & Answers
-
-#### 1️⃣ What’s new in HTML5?
-**Answer:**
-HTML5 introduced several new features to enhance web development. Some of the key improvements are:
+ <details>
+  <summary> <h3> 43) What’s new in HTML5? </h3></summary>
+  <small>
+   HTML5 introduced several new features to enhance web development. Some of the key improvements are:
 
 #### **1. New Semantic Elements**
 - `<header>` – Defines the header section of a page.
@@ -436,7 +506,57 @@ HTML5 introduced several new features to enhance web development. Some of the ke
 #### **6. Mobile-Friendly Features**
 - **Viewport Meta Tag** – Helps create responsive designs for different screen sizes.
 - **Touch Event API** – Detects touch gestures for mobile interaction.
-- **Responsive Image Support** – Uses `<picture>` and `srcset` to load different images based on screen size.
+- **Responsive Image Support** – Uses `<picture>` and `srcset` to load different images based on screen size. 
+  </small>
+ </details>
+
+
+
+ <details>
+  <summary> <h3> 44) ** What are the Limitations of HTML?** </h3> </summary>
+
+HTML ek **markup language** hai jo **webpages ka structure** define karti hai, **lekin isme kuch limitations** hain. Chalo inhe samajhte hain:
 
 ---
 
+### **🔹 1. No Dynamic Functionality**  
+❌ HTML **sirf static** hota hai, iska matlab yeh **user interaction** (like button click pe action) nahi handle kar sakta.  
+✅ **Solution:** JavaScript use karo taaki webpage interactive ho sake.  
+
+---
+
+### **🔹 2. No Database Connectivity**  
+❌ HTML **database se direct connect nahi** ho sakta, yani yeh **data store ya fetch** nahi kar sakta.  
+✅ **Solution:** PHP, Node.js jese **backend languages** ka use karo.  
+
+---
+
+### **🔹 3. Limited Styling Options**  
+❌ HTML sirf **page ka structure** banata hai, **design aur styling** ke liye zyada options nahi deta.  
+✅ **Solution:** CSS ka use karo taaki page **achha dikh sake**.  
+
+---
+
+### **🔹 4. Not Secure**  
+❌ HTML code **sabko easily visible** hota hai aur koi **security features** nahi provide karta.  
+✅ **Solution:** HTTPS, authentication aur secure backend coding ka use karo.  
+
+---
+
+### **🔹 5. No Logic or Conditions**  
+❌ HTML me **if-else conditions, loops ya calculations** nahi likh sakte.  
+✅ **Solution:** JavaScript ya backend programming languages ka use karo.  
+
+---
+
+### **🔹 6. Responsive Design Issues**  
+❌ Basic HTML me **automatically screen sizes adjust nahi hoti**.  
+✅ **Solution:** CSS media queries aur Bootstrap jese frameworks use karo.  
+
+---
+
+### **✅ Conclusion**  
+**HTML akela ek complete website nahi bana sakta!** Iske saath **CSS, JavaScript aur backend** languages ki zaroorat hoti hai taaki ek **fully functional website** ban sake. 🚀
+
+ </details>
+ 
