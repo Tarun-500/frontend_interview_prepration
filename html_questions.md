@@ -5,7 +5,63 @@
 ### 5) CSS Box Modal
 ### 6) Void Element (that do not need closing tag like input, br, img)
 ### 7) HTML entities (Symbol like &nbsp, &copy, @quot)
-### 8) White Space in HTML 
+ 
+<details>
+ <summary> 08) <h3>What is White Space in HTML?</h3> </summary> 
+
+**White space** in HTML refers to **spaces, tabs, and new lines** that help structure the code but are usually ignored by the browser when displaying content.
+
+---
+
+### **🛠 Real-Life Example**  
+Imagine typing a sentence with multiple spaces like this:
+```
+Hello       World!
+```
+The browser will display it as:
+```
+Hello World!
+```
+HTML **automatically removes extra spaces** unless we use special methods.
+
+---
+
+### **🔹 How to Preserve White Space?**  
+
+#### **1️⃣ Using `&nbsp;` (Non-Breaking Space)**  
+```html
+<p>Hello &nbsp;&nbsp;&nbsp; World!</p>
+```
+✅ Keeps extra spaces between words.
+
+#### **2️⃣ Using `<pre>` Tag**  
+```html
+<pre>
+    This   text  keeps   spaces  and   line breaks.
+</pre>
+```
+✅ Displays text exactly as written.
+
+#### **3️⃣ Using CSS `white-space` Property**  
+```css
+p {
+    white-space: pre;
+}
+```
+✅ Makes spaces and line breaks visible.
+
+---
+
+### **🔹 Where is White Space Handling Used?**  
+✔ **Formatting Code Blocks** → Shows code with indentation.  
+✔ **Designing Layouts** → Adjusting space between elements.  
+✔ **Preventing Text Wrapping** → Keeps words together in a single line.  
+
+---
+
+✅ **Conclusion:** White space helps structure HTML code but is usually ignored unless special techniques are used! 🚀
+
+</details>
 ### 9) Map in HTML (Using Coords and area tag)
 ### 10) Absolute URL (https://google.com) and relative URL (/img/user.jpg)
 ### 11) Use of tile tag - (for worked like tooltip while hovering)
@@ -17,22 +73,249 @@
 ### 17) datalist vs select 
 ### 18) DOCTYPE - Define HTML Version
 ### 19) HTML5 Semantic Elements (header, nav, main, section, article, aside, footer)
-### 20) Novalidate attribute (use for disabled validation in form)
-### 21) Web Workers?
-### 22) server-sent events in HTML5?
-### 23) MathML element in HTML5?
+### 20) Novalidate attribute (use for disabled validation in form)?
+
+<details>
+ <summary> <h3> 21) What are Web Workers in JavaScript? </h3> </summary>
+
+**Web Workers** allow JavaScript to run in the **background**, so your webpage doesn’t freeze when doing heavy tasks.
+
+### **🛠 Real-Life Example**
+Imagine you are ordering food online. While your order is being prepared (**background process**), you can still browse the menu (**main UI remains responsive**). Web Workers work the same way!
+
+---
+
+### **✅ Why Use Web Workers?**
+✔ Prevents the webpage from **freezing**.  
+✔ Runs **heavy calculations** in the background.  
+✔ Makes web apps **faster & smoother**.  
+
+---
+
+### **🛠 Example: Using Web Workers**  
+
+#### **1️⃣ Create a Web Worker File (`worker.js`)**
+```js
+// worker.js
+self.onmessage = function (event) {
+    let result = event.data * 2; // Perform some task
+    postMessage(result); // Send result back
+};
+```
+
+#### **2️⃣ Use the Web Worker in Main Script (`main.js`)**
+```js
+// main.js
+let worker = new Worker("worker.js"); // Create worker
+
+worker.postMessage(5); // Send data to worker
+
+worker.onmessage = function (event) {
+    console.log("Result from worker:", event.data); // Output: 10
+};
+```
+
+---
+
+### **🔹 Real-Life Uses of Web Workers**
+✔ **Online Games** → Keeps the game smooth while processing moves in the background.  
+✔ **Chat Apps** → Runs notifications & message updates without freezing the app.  
+✔ **Data Processing** → Handles large calculations (e.g., encryption, image processing) without slowing the page.  
+
+---
+
+### **❌ Limitations of Web Workers**
+- 🚫 **Cannot directly access the DOM** (HTML elements).  
+- 🚫 **Not needed for small tasks**, use `setTimeout()` instead.
+
+---
+
+✅ **Conclusion:** Use Web Workers to keep web applications **fast & smooth** when handling **heavy tasks!** 🚀
+
+</details>
+
+
+<details>
+ <summary> 22)  <h3> Server-Sent Events (SSE) in HTML5 </h3></summary>
+ 
+**Server-Sent Events (SSE)** allow a server to **send updates to the browser automatically** without the browser repeatedly requesting them.
+
+---
+
+### **🛠 Real-Life Example**  
+Imagine **live cricket scores** updating on a website without refreshing the page. SSE makes this possible!
+
+---
+
+### **✅ How SSE Works?**  
+1️⃣ **Server Sends Data** → The server pushes updates to the browser.  
+2️⃣ **Browser Receives Data** → The browser listens and updates the webpage.  
+
+---
+
+### **🛠 Simple Example**  
+
+#### **1️⃣ Create a Server (`server.php`)**  
+```php
+<?php
+header('Content-Type: text/event-stream');
+header('Cache-Control: no-cache');
+
+echo "data: " . date('h:i:s A') . "\n\n"; // Send current time
+flush();
+?>
+```
+
+#### **2️⃣ Connect SSE in HTML (`index.html`)**  
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Live Time Update</title>
+</head>
+<body>
+    <h2>Current Time:</h2>
+    <p id="time"></p>
+
+    <script>
+        let eventSource = new EventSource("server.php");
+
+        eventSource.onmessage = function(event) {
+            document.getElementById("time").innerText = event.data;
+        };
+    </script>
+</body>
+</html>
+```
+
+---
+
+### **🔹 Where is SSE Used?**  
+✔ **Live Sports Scores**  
+✔ **Real-time Notifications**  
+✔ **Stock Market Updates**  
+✔ **Live Chat (One-Way Messaging)**  
+
+---
+
+✅ **Conclusion:** SSE is best for real-time updates **without refreshing the page!** 🚀
+
+</details>
+
+<details>
+ <summary><h3> 23)  What is MathML in HTML5? </h3></summary>
+
+**MathML (Mathematical Markup Language)** is used to display **mathematical equations** on web pages.
+
+---
+
+### **🛠 Real-Life Example**  
+Imagine you are on a **study website** that shows a **math formula** like:  
+✅ **Quadratic Formula:**  
+\[
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\]
+This can be written in **MathML** inside an HTML page!  
+
+---
+
+### **🔹 Simple Example: Writing a Math Formula**  
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>MathML Example</title>
+</head>
+<body>
+    <h2>Quadratic Formula</h2>
+    <math>
+        <mi>x</mi>
+        <mo>=</mo>
+        <mfrac>
+            <mrow>
+                <mo>-</mo>
+                <mi>b</mi>
+                <mo>&#xB1;</mo>
+                <msqrt>
+                    <msup><mi>b</mi><mn>2</mn></msup>
+                    <mo>-</mo>
+                    <mn>4</mn><mi>a</mi><mi>c</mi>
+                </msqrt>
+            </mrow>
+            <mrow>
+                <mn>2</mn><mi>a</mi>
+            </mrow>
+        </mfrac>
+    </math>
+</body>
+</html>
+```
+
+---
+
+### **🔹 Where is MathML Used?**  
+✔ **Online Education Websites** → To show math formulas easily.  
+✔ **Scientific Articles** → Used in research papers.  
+✔ **Engineering & Finance Websites** → For complex calculations.  
+
+---
+
+✅ **Conclusion:** MathML helps display **math formulas in web pages** just like text! 🚀
+
+</details>
+
 ### 24) HTML Graphics (Using canvas)
 ### 25) Output represents the result of a calculation. Could you explain its attributes?
 ### 26) Microdata in HTML5  (use for SEO with itemscope  itemprop and itemtype attribute)
 ### 27) Web Storage in HTML5 (storage api - localstorage, sessionStorage)
 ### 28) Svg vs canvas?
-### 29) What is the difference between <section> and <div> in HTML
+### 29) What is the difference between <code> section </code> and <code>div </code> in HTML
 ### 30) Thematic block (example- section, article, header, footer, nav, aside)
-### 31) What is the difference between <em> and <strong> tags in HTML?
-### 31) What is the difference between <i> and <em> tags in HTML?
-### 32) What is the difference between localStorage and sessionStorage in HTML?
-### 33) What is the difference between async and defer in HTML?
+### 31) What is the difference between <code> em </code> and <code> strong </code> tags in HTML?
+### 31) What is the difference between <code> i </code> and <code> em </code> tags in HTML?
+### 32) What is the difference between <code> localStorage </code> and <code>sessionStorage </code> in HTML?
+### 33) What is the difference between <code>async </code> and <code> defer </code> in HTML?
 
+<details>
+ <summary> <h3> 34)  What is `aria-label` in HTML and Why is it Used? </h3> </summary>
+
+`aria-label` is an **ARIA (Accessible Rich Internet Applications) attribute** that provides a text description for screen readers when an element does not have visible text. It improves accessibility by making web content more readable for visually impaired users.
+
+### **📌 When to Use `aria-label`?**
+- **Icons Without Text**: Buttons or links with only icons.
+- **Buttons Without Text**: If a button lacks a visible label.
+- **Hidden Labels**: Input fields or elements without a visible `<label>`.
+
+### **🔹 Example 1: Icon Button Without Text**
+```html
+<button aria-label="Close">
+  <img src="close-icon.png" alt="">
+</button>
+```
+✅ Helps screen readers understand the purpose of the button.
+
+### **🔹 Example 2: Search Icon Without Text**
+```html
+<button aria-label="Search">
+  <i class="fa fa-search"></i>
+</button>
+```
+✅ Allows screen readers to identify the button as a **Search** button.
+
+### **🔹 Example 3: Input Field Without a Label**
+```html
+<input type="text" aria-label="Enter your email" placeholder="Email">
+```
+✅ Provides an accessible label for screen reader users.
+
+### **✅ Benefits of `aria-label`**
+- Enhances **accessibility** for visually impaired users.
+- Provides **clear meaning** when a visible label is missing.
+- Helps with **SEO and usability**.
+
+**🔹 Best Practice:** Use a visible `<label>` whenever possible. Use `aria-label` only when a visible label is not feasible.
+
+</details>
 
 
 <details>
