@@ -779,20 +779,20 @@ HTML has **three main display types**:
 
 
 <details>
- <summary> <h3> 49)  HTML `<template>` Tag - Easy Definition & Use </h3></summary>
+ 
+ <summary> <h3> 49)  HTML <code> template </code>   Tag - Easy Definition & Use </h3> </summary>
+ 
 
  <small>
-
-
 ## **Definition**
 The `<template>` tag in HTML is a special container that holds HTML content but does not render it until JavaScript is used to insert it into the DOM.
 
-## **Why Use `<template>`?**
+#### **Why Use `<template>`?**
 - Improves performance by reducing unnecessary re-renders.
 - Allows reusable HTML structures.
 - Content inside `<template>` is ignored by the browser until needed.
 
-## **Example Usage**
+#### **Example Usage**
 ```html
 <template id="myTemplate">
     <p>This is a hidden template!</p>
@@ -810,12 +810,12 @@ The `<template>` tag in HTML is a special container that holds HTML content but 
 </script>
 ```
 
-## **Key Features**
+#### **Key Features**
 - **Not Rendered Initially:** Content inside `<template>` is not displayed until JavaScript activates it.
 - **Reusable:** One template can be used multiple times without repeating the HTML code.
 - **Efficient DOM Manipulation:** Helps optimize performance by reducing direct modifications to the DOM.
 
-## **Use Cases**
+#### **Use Cases**
 - Dynamically adding elements (e.g., Todo lists, Shopping cart items).
 - Creating reusable components in vanilla JavaScript.
 - Loading HTML content only when needed for better performance.
