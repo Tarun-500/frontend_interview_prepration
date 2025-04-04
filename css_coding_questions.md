@@ -25,9 +25,30 @@
 </small>
 </details>
 
+<details>
+  <summary> <h3> 03)  .a > p { } </h3> </summary>
+  <small> It’s a child combinator selector. It selects only the <p> elements that are direct children of any element with the class .a. </small>
+  
+  ```
+  
+  <style>
+  .a > p {
+    color: red;
+    font-weight: bold;
+  }
+</style>
+
+<div class="a">
+  <p>This paragraph will be red and bold ✔</p>
+  <div>
+    <p>This one WON'T be affected ❌</p>
+  </div>
+</div>
+```
+</details>
 
 <details>
-  <summary> <h3> 03)  abc[xyz*=foo] {  } </h3></summary>
+  <summary> <h3> 04)  abc[xyz*=foo] {  } </h3></summary>
   <small>
 The CSS selector abc[xyz*=foo] targets all <abc> elements with an xyz attribute that contains the string "foo". For example, <abc xyz="foobar"></abc> matches.
 
