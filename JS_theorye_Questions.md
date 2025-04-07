@@ -142,7 +142,6 @@ console.log(result); // Output: ["fox"]
 26) JavaScript is dynamically typed, not strictly typed. in typescript strictly typed here we have to give typeof every declarations
 
 27) Stack memory (Primitive) it's do copy, Heap memory (Non-Primitive) it's do not copy it will give reference
- 
 
 30) Prototype 
 
