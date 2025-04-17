@@ -1,6 +1,7 @@
 1) All Types of Css -  3 main (Inline, Internal, External) and 4th optional (CSS Preprocessors) like - SCSS, Less
 2) box modal in css
 3) psudo class and element
+4) universal slector (*)
 
 <details>
   <summary> <h3> 04) Background-Origin vs Background-Clip </h3> </summary>
