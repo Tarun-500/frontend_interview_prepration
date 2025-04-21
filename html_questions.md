@@ -716,11 +716,11 @@ HTML has **three main display types**:
 </details>
 
 
+ <details>
+  <summary> <h3> 48) What is Web Accessibility? </h3> </summary>
+  <small>
+   
  
-
-<details>
- <summary> <h3> 48) What is Web Accessibility? </h3> </summary>
-  
 **Web Accessibility means making websites usable for everyone, including people with disabilities.** The goal is to ensure that everyone can **access web content** without difficulties.
   🔹 **Why is Web Accessibility Important?** 
   
@@ -770,19 +770,77 @@ HTML has **three main display types**:
      </video>
      ```
    
-### **✅ Conclusion**
-✔ **Web accessibility is important for everyone** – disabled users, SEO, and better UX.  
-✔ **Using alt text, keyboard support, ARIA, high contrast, and captions can improve accessibility.**  
-✔ **An accessible website provides a better experience for all! 🚀**
+     ### **✅ Conclusion**
+      ✔ **Web accessibility is important for everyone** – disabled users, SEO, and better UX.  
+      ✔ **Using alt text, keyboard support, ARIA, high contrast, and captions can improve accessibility.**  
+      ✔ **An accessible website provides a better experience for all! 🚀**
+     
+     </small>
 </details> 
 
 
 
-<details>
- 
- <summary> <h3> 49)  HTML <code> template </code>   Tag - Easy Definition & Use </h3> </summary>
- 
 
+<details>
+ <summary> <h3> 49) Difference Between <code><iframe></code> and  <code>< embed > </code> in HTML  </h3> </summary>
+ <small>
+
+### 🔹 `<iframe>` (Inline Frame)
+- **Purpose**: Used to embed another **HTML page or external website** into the current page.
+- **Full document embedding**.
+- Can show content like web pages, maps, YouTube, etc.
+
+#### ✅ Example:
+```html
+<iframe src="https://www.example.com" width="600" height="400"></iframe>
+```
+
+#### 🧠 Features:
+- Can be styled using CSS.
+- Can include scrollbars.
+- You can interact with the embedded content (via JavaScript, `postMessage`, etc.).
+
+---
+
+### 🔹 `<embed>`
+- **Purpose**: Used to embed **external content** like **PDFs, videos, or flash files** (non-HTML content).
+- More suitable for **media files or plugins**.
+
+#### ✅ Example:
+```html
+<embed src="file.pdf" width="600" height="400" type="application/pdf">
+```
+
+#### 🧠 Features:
+- Minimal customization.
+- Lightweight for static content.
+- Doesn't support complex interactions like `<iframe>`.
+
+---
+
+### ✅ Summary Table
+| Feature        | `<iframe>`                     | `<embed>`                          |
+|----------------|--------------------------------|------------------------------------|
+| Content Type   | Entire webpage or HTML content| Media files (PDF, videos, etc.)    |
+| Interaction    | High (JS, messages, etc.)     | Low                                |
+| Use Case       | Embed web apps/sites           | Show documents, media              |
+| Customization  | CSS styling, scroll, JS access| Limited                            |
+
+---
+
+### ✅ Conclusion
+Use `<iframe>` when you need to embed **interactive webpages**.  
+Use `<embed>` when showing **non-interactive media files** like **PDFs or videos**. 🚀
+ </small>
+</details>
+
+
+
+
+
+
+<details>
+ <summary> <h3> 50)  HTML <code> template </code>   Tag - Easy Definition & Use </h3> </summary>
  <small>
 ## **Definition**
 The `<template>` tag in HTML is a special container that holds HTML content but does not render it until JavaScript is used to insert it into the DOM.
@@ -793,6 +851,7 @@ The `<template>` tag in HTML is a special container that holds HTML content but 
 - Content inside `<template>` is ignored by the browser until needed.
 
 #### **Example Usage**
+
 ```html
 <template id="myTemplate">
     <p>This is a hidden template!</p>
@@ -820,6 +879,7 @@ The `<template>` tag in HTML is a special container that holds HTML content but 
 - Creating reusable components in vanilla JavaScript.
 - Loading HTML content only when needed for better performance.
 
-
-  </small>
+ </small>
 </details>
+
+
