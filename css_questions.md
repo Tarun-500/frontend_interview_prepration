@@ -202,7 +202,7 @@ primary-color = blue
 
 
 <details>
-  <sumary> <h3> 06) Viewport Units Explained Simply </h3> </sumary>
+  <summary> <h3> 06) Viewport Units Explained Simply </h3> </summary>
   <small>
 
 | Unit   | Full Form                 | What It Means (Easy)                                                                 | When to Use It ✅ |
