@@ -198,3 +198,49 @@ primary-color = blue
 ✅ **SCSS is the most popular today, especially with modern frameworks like Bootstrap & React!** 🚀
 
 </details> 
+
+
+
+<details>
+  <sumary> <h3> 06) Viewport Units Explained Simply </h3> </sumary>
+  <small>
+
+| Unit   | Full Form                 | What It Means (Easy)                                                                 | When to Use It ✅ |
+|--------|---------------------------|----------------------------------------------------------------------------------------|------------------|
+| `vh`   | Viewport Height           | 1% of the visible screen height. Might break on mobile when address bar shows.        | ✅ Desktop layout |
+| `lvh`  | Large Viewport Height     | 1% of the **largest height** the screen can have (when browser UI is hidden).         | ✅ Full-screen layout on mobile |
+| `svh`  | Small Viewport Height     | 1% of the **smallest height** when mobile browser UI (like address bar) is visible.   | ✅ If you want content to fit even with browser UI visible |
+| `dvh`  | Dynamic Viewport Height   | 1% of the height **right now**, changes if mobile UI shows/hides.                     | ✅ Best for mobile apps or dynamic UIs |
+| `vmin` | Viewport Minimum          | 1% of the **smaller** between width and height.                                        | ✅ Responsive fonts or layout |
+| `vmax` | Viewport Maximum          | 1% of the **larger** between width and height.                                         | ✅ When you want things to scale with the larger screen side |
+
+---
+
+### 💡 Example
+
+```css
+.full-height {
+  height: 100dvh; /* Best for mobile layout */
+}
+
+.responsive-box {
+  width: 50vmin;  /* Always scales with smaller side of screen */
+}
+```
+
+---
+
+### 🎯 Super Simple Summary
+
+- **Use `vh`** for desktop layouts.
+- **Use `dvh`** for mobile-friendly height that auto-adjusts.
+- **Use `lvh`** when you want to take full height when browser UI is hidden.
+- **Use `svh`** when you want to stay safe when browser UI is visible.
+- **Use `vmin`/`vmax`** when you want size to depend on screen dimensions.
+
+---
+
+Use these units to build layouts that **work smoothly across all devices** 🚀
+
+  </small>
+</details>
