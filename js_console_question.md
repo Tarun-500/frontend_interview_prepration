@@ -64,14 +64,14 @@ console.log('arr.length', arr)
 
 
 <script>
-  // 5)
-  // let x=10;
-  // // x = (x++, x) //output 11
-  // // x = (x++, 5) //output 5  //its take 2nd or last value
-  // // y = 50
-  // // x = (x++, y) // output 50
-  // x = (x+=20) // output 30
-  // console.warn(x);
+
+   let x=10;
+ x = (x++, x) //output 11
+ x = (x++, 5) //output 5  //its take 2nd or last value
+  y = 50
+   x = (x++, y) // output 50
+  x = (x+=20) // output 30
+  console.warn(x);
 
   // 6) Convert this string into an array -
   // let str = "Hello, My Self Tarun shah"
@@ -655,26 +655,26 @@ console.log('arr.length', arr)
   /////// _______29). find how many vowels in this array
 
   const a = "This is Tarun Jain";
-  // function countVowels(a) {
-  //   const b = ["a", "e", "i", "o", "u"];
-  //   let count = 0;
-  //   a.toLowerCase()
-  //     .split("")
-  //     .forEach((arr) => {
-  //       b.includes(arr) && count++;
-  //     });
-  //   return count;
+  function countVowels(a) {
+    const b = ["a", "e", "i", "o", "u"];
+   let count = 0;
+     a.toLowerCase()
+      .split("")
+     .forEach((arr) => {
+         b.includes(arr) && count++;
+       });
+     return count;
   // }
 
 
   // //  using filter
-  // function countVowels(a) {
-  //   const b = ["a", "e", "i", "o", "u"];
-  //   return a.toLowerCase()
-  //     .split("")
-  //     .filter((ch) => 
-  //       b.includes(ch) ).length;
-  // }
+   function countVowels(a) {
+     const b = ["a", "e", "i", "o", "u"];
+   return a.toLowerCase()
+       .split("")
+      .filter((ch) => 
+         b.includes(ch) ).length;
+   }
 
   console.log(countVowels(a));
 
