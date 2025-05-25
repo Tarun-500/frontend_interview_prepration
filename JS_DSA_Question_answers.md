@@ -39,3 +39,7 @@ function sumArray(arr) {
 console.log(sumArray(arr)); // Output: 226
 ```
 </details>  
+
+<details>
+  <summary> <strong> 004) Remove Adjacent Duplicates in an Array (Single Pass) Input:  [1, 2, 2, 3, 3, 3, 4, 4, 5] Output: [1, 2, 3, 4, 5]  </strong> </summary>
+</details>
