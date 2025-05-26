@@ -167,6 +167,8 @@ console.log(result); // Output: ["fox"]
 49) bind, call, apply in JavaScript
 50) async/await in JavaScript
 51) Type Conversion in JavaScript - using - * / with string like ("1" - 1) = 0
-51) Type casting in JavaScript - making any string into a number or number to a string is type casting or changing any type to another type is type casting
+52) Type casting in JavaScript - making any string into a number or number to a string is type casting or changing any type to another type is type casting
 
-52) unary operator
+53) unary operator
+54) threads 
+55) 
