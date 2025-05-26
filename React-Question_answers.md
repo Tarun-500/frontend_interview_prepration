@@ -394,6 +394,12 @@ functional components manage state, perform side effects, and access React featu
 4) instance method
 
 5) Event Handling
+6) container and component in redux
+7) auth gurad
+8) middleware - saga,thunk, slice
+9) redux toolkit
+10) reducer, saga, action, store
+11) 
 
 
 
