@@ -840,6 +840,44 @@ Use `<embed>` when showing **non-interactive media files** like **PDFs or videos
 
 
 <details>
+ <summary> <h3> 51) noscript tag use in html  </h3> </summary>
+
+ 
+
+### Use of `<noscript>` Tag in HTML
+
+The `<noscript>` tag in HTML is used to define content that will be displayed **only if the user’s browser does not support JavaScript or if JavaScript is disabled**.
+
+---
+
+#### Key points about `<noscript>` tag:
+
+- **Purpose:** Show alternative content or messages when JavaScript is not available.
+- **Usage:** Inside `<body>`, anywhere you want fallback content.
+- **Typical uses:**  
+  - Inform users to enable JavaScript for better experience.  
+  - Provide alternative navigation or content that works without JavaScript.
+
+---
+
+#### Example:
+
+```html
+<noscript>
+  <p>Please enable JavaScript to use this website properly.</p>
+</noscript>
+```
+</details>
+
+
+
+
+
+
+
+
+
+<details>
  <summary> <h3> 50)  HTML <code> template </code>   Tag - Easy Definition & Use </h3> </summary>
  <small>
 ## **Definition**
@@ -882,4 +920,4 @@ The `<template>` tag in HTML is a special container that holds HTML content but 
  </small>
 </details>
 
-
+ 
