@@ -920,4 +920,10 @@ The `<template>` tag in HTML is a special container that holds HTML content but 
  </small>
 </details>
 
+### 51) Explain and use inert attribute. When will you use it?
+
+### 52) Create a semantic and accessible collapsible FAQ section using HTML only.
+
+### 53) How do you prevent screen reader from reading decorative images?
+
  
