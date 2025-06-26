@@ -39,7 +39,7 @@ person.greet(); // Output: Hello, my name is John
 
 ## 7) Callback function - In JavaScript, a callback function is a function that is passed as an argument to another function and is executed later, typically after the completion of some operation or task. Callback functions are commonly used in asynchronous programming to handle tasks that depend on the completion of other tasks or events. They allow for flexible and efficient control flow by enabling actions to be executed asynchronously or in response to certain events.
 
-Function that takes a callback as an argument
+A function that takes a callback as an argument
 function greet(name, callback) {
   console.log("Hello, " + name + "!");
   // Execute the callback function after greeting
@@ -99,7 +99,7 @@ console.log(result); // Output: ["fox"]
 
 
 
-## 11) What is JavaScript - JavaScript is a programming language often used to make websites more interactive.
+## 11) What is JavaScript? JavaScript is a programming language often used to make websites more interactive.
 
 
 
@@ -122,10 +122,10 @@ console.log(result); // Output: ["fox"]
 17) Call bind apply - 
 
 
-18) Hoisting -  in JavaScript means you can use variables and functions before declaring them, because JavaScript moves their declarations to the top of the scope.
+18) Hoisting -  in JavaScript, means you can use variables and functions before declaring them, because JavaScript moves their declarations to the top of the scope.
 
 
-19) Currying - in JavaScript is when a function takes one argument at a time and returns a new function for the next argument.
+19) Currying, in JavaScript, is when a function takes one argument at a time and returns a new function for the next argument.
 
 20) Generates - 
 
@@ -133,15 +133,15 @@ console.log(result); // Output: ["fox"]
 
 22) Temporal Dead Zone (TDZ) in JavaScript - 
 
-23) automatic return - in js when we us arrow function that time if we are using  single code then we not need to written "return" .
+23) automatic return - in JS, when we use an arrow function, if we are using a  single code, then we do not need to write "return" .
 
 24) prefix and postfix
 
 25) strict check
 
-26) JavaScript is dynamically typed, not strictly typed. in typescript strictly typed here we have to give typeof every declarations
+26) JavaScript is dynamically typed, not strictly typed. In typescript, strictly typed here, we have to give typeof to every declaration
 
-27) Stack memory (Primitive) it's do copy, Heap memory (Non-Primitive) it's do not copy it will give reference
+27) Stack memory (Primitive) is copied, Heap memory (Non-Primitive) is not copied, it will give a reference
 
 30) Prototype 
 
@@ -163,12 +163,11 @@ console.log(result); // Output: ["fox"]
 45) Encapsulation in JavaScript
 46) Abstraction in JavaScript
 47) Polymorphism in JavaScript
-48) this keyword in JavaScript
+48) `this` keyword in JavaScript
 49) bind, call, apply in JavaScript
 50) async/await in JavaScript
 51) Type Conversion in JavaScript - using - * / with string like ("1" - 1) = 0
 52) Type casting in JavaScript - making any string into a number or number to a string is type casting or changing any type to another type is type casting
 
 53) unary operator
-54) threads 
-55) 
+54) threads
