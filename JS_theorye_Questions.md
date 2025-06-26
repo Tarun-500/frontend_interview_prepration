@@ -26,7 +26,7 @@ console.log(i); // This will throw an error because 'i' is not defined outside t
  
 
 
-## 6) this keyword use in js  -  this in JavaScript refers to the current object or context. 
+## 6) This keyword used in JS  -  this in JavaScript refers to the current object or context. 
 
 const person = {
   name: 'John',
@@ -111,7 +111,7 @@ console.log(result); // Output: ["fox"]
 
 
 
-14) Event handling - in JavaScript involves responding to user interactions, like clicks or keystrokes, by defining functions (event handlers) that execute when those events occur. These functions are then attached to specific HTML elements using event listeners.
+14) Event handling in JavaScript involves responding to user interactions, like clicks or keystrokes, by defining functions (event handlers) that execute when those events occur. These functions are then attached to specific HTML elements using event listeners.
 
 
 
@@ -133,7 +133,7 @@ console.log(result); // Output: ["fox"]
 
 22) Temporal Dead Zone (TDZ) in JavaScript - 
 
-23) automatic return - in JS, when we use an arrow function, if we are using a  single code, then we do not need to write "return" .
+23) automatic return - in JS, when we use an arrow function, if we are using a  single code, then we do not need to write "return".
 
 24) prefix and postfix
 
@@ -167,7 +167,7 @@ console.log(result); // Output: ["fox"]
 49) bind, call, apply in JavaScript
 50) async/await in JavaScript
 51) Type Conversion in JavaScript - using - * / with string like ("1" - 1) = 0
-52) Type casting in JavaScript - making any string into a number or number to a string is type casting or changing any type to another type is type casting
+52) Type casting in JavaScript - making any string into a number or a number to a string is type casting, or changing any type to another type is type casting
 
 53) unary operator
 54) threads
