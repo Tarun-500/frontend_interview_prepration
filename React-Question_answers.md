@@ -472,6 +472,15 @@ useEffect	render is painted	Network calls, subscriptions
 useLayoutEffect	before paint (blocking)	Measure DOM, sync layout
 useInsertionEffect	before layout effect	Styling libraries (emotion, styled-components)
 
+14) What are React Server Components?
+15) Explain batching in React 18. What’s new?
+16) Explain React’s Virtual DOM diffing algorithm. What is “reconciliation”?
+17) Can you build your own useDebounce or useThrottle hook?
+18) Explain React Fiber architecture.
+19)  What happens if you update state inside render() method?
+20)  Explain rendering behavior when using useEffect vs useMemo in a component
+21)  
+
 
 
 
