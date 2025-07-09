@@ -459,7 +459,14 @@ src/
 
 > "React apps use a simple structure. `src/` and `public/` are core. Real-world apps often include `components/`, `pages/`, and `hooks/` for better organization."
 
-Let me know if you'd like to download this as a `.md` file.
+
+
+
+
+12) What is React 18’s Concurrent Mode? How does it improve performance?
+13) 
+
+
 
 
 
