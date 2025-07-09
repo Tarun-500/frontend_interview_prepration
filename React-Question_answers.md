@@ -464,7 +464,14 @@ src/
 
 
 12) What is React 18’s Concurrent Mode? How does it improve performance?
-13) 
+13)  Difference between useEffect, useLayoutEffect, and useInsertionEffect?
+Answer:
+
+Hook	Runs after...	Use case
+useEffect	render is painted	Network calls, subscriptions
+useLayoutEffect	before paint (blocking)	Measure DOM, sync layout
+useInsertionEffect	before layout effect	Styling libraries (emotion, styled-components)
+
 
 
 
