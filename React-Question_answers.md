@@ -399,7 +399,68 @@ functional components manage state, perform side effects, and access React featu
 8) middleware - saga,thunk, slice
 9) redux toolkit
 10) reducer, saga, action, store
-11) 
+11)  React JS directory - ## React.js Default Directory Structure (Short Interview View)
+
+When you create a React project using **Create React App (CRA)**, the default structure is:
+
+```
+my-app/
+├── node_modules/
+├── public/
+│   └── index.html
+├── src/
+│   ├── App.js
+│   └── index.js
+├── package.json
+├── .gitignore
+└── README.md
+```
+
+### 📁 Key Folders
+
+#### `public/`
+
+* Static files.
+* `index.html` is the root HTML file.
+
+#### `src/`
+
+* Main React code.
+* `index.js`: Entry point.
+* `App.js`: Root component.
+
+#### `node_modules/`
+
+* Auto-managed npm packages.
+
+#### `package.json`
+
+* Project dependencies and scripts.
+
+---
+
+### 📦 Real-World `src/` Structure (Optional)
+
+```
+src/
+├── components/
+├── pages/
+├── assets/
+├── hooks/
+├── utils/
+├── context/
+├── App.js
+└── index.js
+```
+
+---
+
+### ✅ Interview Summary
+
+> "React apps use a simple structure. `src/` and `public/` are core. Real-world apps often include `components/`, `pages/`, and `hooks/` for better organization."
+
+Let me know if you'd like to download this as a `.md` file.
+
 
 
 
