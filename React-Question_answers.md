@@ -477,9 +477,10 @@ useInsertionEffect	before layout effect	Styling libraries (emotion, styled-compo
 16) Explain React’s Virtual DOM diffing algorithm. What is “reconciliation”?
 17) Can you build your own useDebounce or useThrottle hook?
 18) Explain React Fiber architecture.
-19)  What happens if you update state inside render() method?
-20)  Explain rendering behavior when using useEffect vs useMemo in a component
-21)  
+19) What happens if you update state inside render() method?
+20) Explain rendering behavior when using useEffect vs useMemo in a component
+21) What is hydration in React?
+
 
 
 
