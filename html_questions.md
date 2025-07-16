@@ -927,3 +927,68 @@ The `<template>` tag in HTML is a special container that holds HTML content but 
 ### 53) How do you prevent screen reader from reading decorative images?
 
  
+
+### 54) What is a Canonical Tag in HTML and why is it important for SEO?
+ 
+A **canonical tag** (`<link rel="canonical">`) is an HTML element placed in the `<head>` section of a webpage. It is used to tell search engines which version of a page is the **preferred ("canonical") version** when there are **multiple pages with similar or duplicate content**.
+
+It helps to:
+- Avoid **duplicate content issues**
+- **Consolidate SEO ranking signals** to a single URL
+- Improve **crawl efficiency** for search engines
+
+---
+
+## 🛠️ Syntax
+
+```html
+<link rel="canonical" href="https://example.com/main-page/" />
+```
+
+### 55) ✅ Open Graph (OG) Tags
+
+### 🔹 What are OG Tags?
+
+Open Graph (OG) tags are HTML `<meta>` tags that control how your webpage appears when shared on social media platforms like Facebook, LinkedIn, etc.
+
+They allow you to define:
+- Title
+- Description
+- Image
+- URL
+- Content type
+
+---
+
+### 🧩 Basic Syntax
+
+```html
+<meta property="og:title" content="Your Page Title" />
+<meta property="og:description" content="Short summary of your page" />
+<meta property="og:image" content="https://example.com/image.jpg" />
+<meta property="og:url" content="https://example.com/page" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Your Website Name" />
+
+## 🔀 Canonical vs Open Graph Tags
+
+| Feature         | Canonical Tag                                      | Open Graph Tag                                         |
+|-----------------|----------------------------------------------------|--------------------------------------------------------|
+| **Purpose**     | Avoid duplicate content (SEO)                      | Improve link previews on social platforms              |
+| **Format**      | `<link rel="canonical" href="...">`               | `<meta property="og:*" content="...">`                |
+| **Target**      | Search engines (Google, Bing, etc.)                | Social media platforms (Facebook, LinkedIn, etc.)      |
+| **Key Use**     | Point to the main/original version of the content  | Customize how your content appears when shared         |
+| **Location**    | Inside `<head>`                                    | Inside `<head>`                                        |
+| **Affects**     | SEO indexing, duplicate content handling           | Visual representation, engagement on shares            |
+| **Example Tool**| Google Search Console                              | Facebook Sharing Debugger, LinkedIn Post Inspector     |
+
+---
+
+### ✅ Summary:
+
+- **Canonical Tags** are used to tell search engines the **preferred version** of a page to avoid SEO penalties from duplicate content.
+- **Open Graph Tags** are used to control how your web page **looks when shared** on social media, like the image, title, and description shown in the preview.
+
+---
+
+
