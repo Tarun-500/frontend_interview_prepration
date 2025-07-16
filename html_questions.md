@@ -890,7 +890,7 @@ The `<template>` tag in HTML is a special container that holds HTML content but 
 
 #### **Example Usage**
 
-```html
+``` 
 <template id="myTemplate">
     <p>This is a hidden template!</p>
 </template>
@@ -917,8 +917,11 @@ The `<template>` tag in HTML is a special container that holds HTML content but 
 - Creating reusable components in vanilla JavaScript.
 - Loading HTML content only when needed for better performance.
 
- </small>
+ </small>   
 </details>
+
+
+
 
 ### 51) Explain and use inert attribute. When will you use it?
 
