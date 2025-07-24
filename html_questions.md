@@ -892,15 +892,11 @@ The `hreflang` tag is an HTML attribute used to tell search engines **what langu
 
 ---
 
-### ✅ Why is it Important?
-
 - Helps **Google serve the correct version** of a page to users based on their location/language.
 - Avoids **duplicate content issues** across translated/localized versions of the same page.
 - Improves **user experience** by showing content in the user's preferred language.
 
 ---
-
-### 🧩 Syntax
 
 ```html
 <link rel="alternate" hreflang="x" href="url" />
@@ -916,7 +912,7 @@ The `hreflang` tag is an HTML attribute used to tell search engines **what langu
 
 
 <details>
- <summary> <h3>  51) Explain and use `inert` attribute. When will you use it? </h3> </summary>
+ <summary> <h3>  52) Explain and use `inert` attribute. When will you use it? </h3> </summary>
  <small>
   `inert` Attribute (HTML)
 
@@ -928,8 +924,6 @@ It's used when you want to **disable interaction** with a section — like backg
   <button>Won't work</button>
 </div>
 ```
-
-
 ---
 
 | Question              | Answer                                                                |
@@ -940,6 +934,12 @@ It's used when you want to **disable interaction** with a section — like backg
 
  </small>
 </details>
+
+
+
+
+
+
 
 
 
