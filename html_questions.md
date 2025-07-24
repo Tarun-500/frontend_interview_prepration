@@ -873,7 +873,7 @@ The `<noscript>` tag in HTML is used to define content that will be displayed **
 
 
 <details>
- <summary>  ### 56) 🌍 Hreflang Tag in SEO </summary>
+ <summary> <h3> 56) 🌍 Hreflang Tag in SEO </h3> </summary>
 <small>
  ### 📝 Summary
 
