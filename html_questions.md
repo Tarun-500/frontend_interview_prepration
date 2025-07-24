@@ -873,7 +873,7 @@ The `<noscript>` tag in HTML is used to define content that will be displayed **
 
 
 <details>
- <summary> <h3> 56) 🌍 Hreflang Tag in SEO </h3> </summary>
+ <summary> <h3> 51)  Hreflang Tag in SEO </h3> </summary>
 <small>
  ### 📝 Summary
 
@@ -912,6 +912,35 @@ The `hreflang` tag is an HTML attribute used to tell search engines **what langu
 ```
 </small>
 </details>
+
+
+
+<details>
+ <summary> <h3>  51) Explain and use `inert` attribute. When will you use it? </h3> </summary>
+ <small>
+  `inert` Attribute (HTML)
+
+The `inert` attribute makes an element **non-clickable** and **not focusable**.
+It's used when you want to **disable interaction** with a section — like background content when a **popup/modal** is open.
+
+```html
+<div inert>
+  <button>Won't work</button>
+</div>
+```
+
+
+---
+
+| Question              | Answer                                                                |
+| --------------------- | --------------------------------------------------------------------- |
+| What is inert?        | Makes an element non-interactive and hidden from accessibility tools. |
+| When to use?          | During modals, overlays, or when disabling UI sections temporarily.   |
+| Does it hide content? | ❌ No. It shows the content but makes it unclickable/unfocusable.      |
+
+ </small>
+</details>
+
 
 
 
@@ -962,7 +991,6 @@ The `<template>` tag in HTML is a special container that holds HTML content but 
 
 
 
-### 51) Explain and use inert attribute. When will you use it?
 
 ### 52) Create a semantic and accessible collapsible FAQ section using HTML only.
 
