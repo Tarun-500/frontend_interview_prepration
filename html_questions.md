@@ -716,11 +716,12 @@ HTML has **three main display types**:
 </details>
 
 
+
+
+
  <details>
   <summary> <h3> 48) What is Web Accessibility? </h3> </summary>
   <small>
-   
- 
 **Web Accessibility means making websites usable for everyone, including people with disabilities.** The goal is to ensure that everyone can **access web content** without difficulties.
   🔹 **Why is Web Accessibility Important?** 
   
@@ -794,7 +795,6 @@ HTML has **three main display types**:
 ```html
 <iframe src="https://www.example.com" width="600" height="400"></iframe>
 ```
-
 #### 🧠 Features:
 - Can be styled using CSS.
 - Can include scrollbars.
@@ -840,7 +840,7 @@ Use `<embed>` when showing **non-interactive media files** like **PDFs or videos
 
 
 <details>
- <summary> <h3> 51) noscript tag use in html  </h3> </summary>
+ <summary> <h3> 50) noscript tag use in html  </h3> </summary>
 
  
 
@@ -872,7 +872,46 @@ The `<noscript>` tag in HTML is used to define content that will be displayed **
 
 
 
+<details>
+ <summary>  ### 56) 🌍 Hreflang Tag in SEO </summary>
+<small>
+ ### 📝 Summary
 
+| Feature      | Hreflang Tag                           |
+|--------------|--------------------------------------|
+| Used For     | Language & region targeting           |
+| Placed In   | `<head>` tag or HTTP header           |
+| SEO Impact   | Avoids duplicate content, improves targeting |
+| Works With   | Google, Yandex (not supported by Bing, Yahoo) |
+
+---
+
+### ❓ What is the Hreflang Tag?
+
+The `hreflang` tag is an HTML attribute used to tell search engines **what language and geographical target** your webpage is intended for. It's useful when you have **multiple versions of a page** for different languages or regions.
+
+---
+
+### ✅ Why is it Important?
+
+- Helps **Google serve the correct version** of a page to users based on their location/language.
+- Avoids **duplicate content issues** across translated/localized versions of the same page.
+- Improves **user experience** by showing content in the user's preferred language.
+
+---
+
+### 🧩 Syntax
+
+```html
+<link rel="alternate" hreflang="x" href="url" />
+
+<link rel="alternate" hreflang="en" href="https://example.com/en/" />
+<link rel="alternate" hreflang="fr" href="https://example.com/fr/" />
+<link rel="alternate" hreflang="es" href="https://example.com/es/" />
+
+```
+</small>
+</details>
 
 
 
@@ -991,45 +1030,5 @@ They allow you to define:
 
 - **Canonical Tags** are used to tell search engines the **preferred version** of a page to avoid SEO penalties from duplicate content.
 - **Open Graph Tags** are used to control how your web page **looks when shared** on social media, like the image, title, and description shown in the preview.
-```
-
-
-
-### 56) 🌍 Hreflang Tag in SEO
-
-### 📝 Summary
-
-| Feature      | Hreflang Tag                           |
-|--------------|--------------------------------------|
-| Used For     | Language & region targeting           |
-| Placed In   | `<head>` tag or HTTP header           |
-| SEO Impact   | Avoids duplicate content, improves targeting |
-| Works With   | Google, Yandex (not supported by Bing, Yahoo) |
-
----
-
-### ❓ What is the Hreflang Tag?
-
-The `hreflang` tag is an HTML attribute used to tell search engines **what language and geographical target** your webpage is intended for. It's useful when you have **multiple versions of a page** for different languages or regions.
-
----
-
-### ✅ Why is it Important?
-
-- Helps **Google serve the correct version** of a page to users based on their location/language.
-- Avoids **duplicate content issues** across translated/localized versions of the same page.
-- Improves **user experience** by showing content in the user's preferred language.
-
----
-
-### 🧩 Syntax
-
-```html
-<link rel="alternate" hreflang="x" href="url" />
-
-<link rel="alternate" hreflang="en" href="https://example.com/en/" />
-<link rel="alternate" hreflang="fr" href="https://example.com/fr/" />
-<link rel="alternate" hreflang="es" href="https://example.com/es/" />
-
 ```
 
