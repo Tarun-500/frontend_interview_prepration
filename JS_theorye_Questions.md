@@ -24,8 +24,6 @@ for (let i = 0; i < 5; i++) {
 console.log(i); // This will throw an error because 'i' is not defined outside the loop
 
  
-
-
 ## 6) This keyword used in JS  -  this in JavaScript refers to the current object or context. 
 
 const person = {
