@@ -143,7 +143,34 @@ console.log(result); // Output: ["fox"]
 
 30) Prototype 
 
-31) Singleton Pattern in JavaScript
+31) Singleton Pattern in JavaScript - # Singleton Pattern in JavaScript
+
+## 🚀 What is Singleton?
+- **Singleton** means → only one object can exist from that pattern.  
+- Even if you try to create it again, it will always **return the same instance**.  
+
+---
+
+## ✅ Example in JavaScript (Functional Way)
+
+```js
+const Singleton = (function () {
+  let instance; // here we keep the single copy
+
+  return function () {
+    if (!instance) {
+      instance = { name: "I am the only one" }; // create once
+    }
+    return instance; // always return the same
+  };
+})();
+
+const a = Singleton();
+const b = Singleton();
+
+console.log(a === b); // true
+
+
 32) Factory Pattern in JavaScript
 33) Observer Pattern in JavaScript
 34) Decorator Pattern in JavaScript
