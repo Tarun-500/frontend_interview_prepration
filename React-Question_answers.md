@@ -482,12 +482,77 @@ useInsertionEffect	before layout effect	Styling libraries (emotion, styled-compo
 21) What is hydration in React?
 
 
+ <details>
+  <summary> <h2>  What is a Hydration Error in React/Next.js? </h2> </summary>
 
+  <small>
+ 
 
+A **hydration error** happens when the **HTML generated on the server
+(SSR)** does **not match** the **HTML generated on the client (browser
+by React)**.\
+This mismatch confuses React during the hydration process (when it
+attaches JavaScript to the already rendered HTML).
 
+------------------------------------------------------------------------
 
+### 🔎 Example
 
+``` jsx
+<p>{new Date().toLocaleTimeString()}</p>
+```
 
+-   Server renders: `12:00:01`\
+-   Client renders: `12:00:02`\
+    👉 They don't match → Hydration Error!
+
+------------------------------------------------------------------------
+
+### ⚠️ Common Causes
+
+1.  Using dynamic values (like time, random numbers).
+2.  Conditional rendering differences between server and client.
+3.  Using browser-only APIs (`window`, `document`) during SSR.
+
+------------------------------------------------------------------------
+
+### 🛠️ How to Fix
+
+**Fix 1: Render dynamic values after hydration**
+
+``` jsx
+"use client";
+import { useEffect, useState } from "react";
+
+export default function Time() {
+  const [time, setTime] = useState("");
+
+  useEffect(() => {
+    setTime(new Date().toLocaleTimeString());
+  }, []);
+
+  return <p>{time}</p>;
+}
+```
+
+✅ This way, the server shows an empty string first, and the time is set
+only on the client --- no mismatch.
+
+**Fix 2:** Ensure server & client render the same output.\
+**Fix 3 (Next.js):** Use `dynamic(() => import(...), { ssr: false })`
+for client-only components.
+
+------------------------------------------------------------------------
+
+### 📝 Summary
+
+Hydration errors = **SSR HTML ≠ Client HTML**.\
+They usually happen because of dynamic or browser-only code.\
+To fix them, move dynamic logic to the client (via `useEffect`, client
+components, or disabling SSR).
+
+  </small>
+ </details>
 
 
  
