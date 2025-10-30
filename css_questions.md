@@ -310,3 +310,69 @@ Use these two powerful selectors smartly for better control over your CSS stylin
 
   </small>
 </details>
+
+
+
+## ❓ What is Reflow and Repaint in CSS?
+
+<details>
+<summary>Click to view the answer</summary>
+
+### 🧩 Understanding Reflow and Repaint in CSS
+
+When you make changes to the DOM or CSS, the browser may need to update what’s displayed on the screen. This process involves **reflow** and **repaint** — both are crucial for rendering performance.
+
+---
+
+### ⚙️ **Reflow (Layout)**
+Reflow happens when the **layout** of the page needs to be recalculated.
+
+#### 🔍 Examples of what triggers reflow:
+- Changing the size or position of an element  
+- Adding or removing DOM elements  
+- Changing font size or content  
+- Modifying CSS properties like `width`, `height`, `margin`, or `padding`
+
+#### 🧠 Process:
+1. The browser recalculates the positions and dimensions of elements.  
+2. It affects not only the element changed but also its children and possibly parent elements.
+
+#### ⚠️ Performance Impact:
+Reflow is **expensive** because it may cause the browser to re-layout large portions of the page.
+
+---
+
+### 🎨 **Repaint**
+Repaint happens when **visual styles** change but the **layout** does not.
+
+#### 🔍 Examples of what triggers repaint:
+- Changing color, background, or visibility (`color`, `background-color`, `visibility`)  
+- Changing `outline` or `box-shadow`
+
+#### 🧠 Process:
+1. The browser does not recalculate layout.  
+2. It simply redraws the affected pixels on the screen.
+
+#### ⚠️ Performance Impact:
+Repaint is **less costly** than reflow, but it can still affect performance if done frequently.
+
+---
+
+### ⚡ **Optimization Tips**
+- Use `class` toggling instead of inline styles to minimize layout recalculations.  
+- Avoid frequently modifying layout-related CSS properties inside loops or animations.  
+- Use CSS transforms (`transform: translateX()`, etc.) instead of changing `top` or `left` to prevent reflow.  
+- Batch DOM changes using `documentFragment` or `requestAnimationFrame()`.
+
+---
+
+### 🧾 **Summary Table**
+
+| Process | Triggered By | Affects Layout? | Expensive? |
+|----------|---------------|-----------------|-------------|
+| **Reflow** | Layout changes (e.g., size, position) | ✅ Yes | 🚨 High |
+| **Repaint** | Visual changes only (e.g., color) | ❌ No | ⚠️ Medium |
+
+---
+
+</details>
