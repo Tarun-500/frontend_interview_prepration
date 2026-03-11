@@ -60,7 +60,45 @@ output: 5
 
 
 
+### 12. Given an n-ary tree, retun the postorder traversal of its nodes values nary-Tree input serialization is represented in their level order traversal, each group of children is separated by the null value.
+input : root = [1, null, 3, 2, 4, null, 5, 6]
+output: [5, 6, 3, 2, 4, 1]
 
+
+
+### 13. Given an integer array nums, find three numbers whose product is maximum and return the maximum product.
+input : nums = [1,2,3]
+output: 6
+
+
+
+### 14. Given a positive integer n, find the number of non-negative integers less than or equal to n, whose binary representations do NOT contain consecutive ones.
+input : 5
+output: 5
+
+
+
+### 15. Given a non-negative integer c, decide wheather there are two integers a and b such that a2 + b2 = c.
+input : c = 5
+output: true
+
+
+
+### 16. Given an integer array nums, find threee numbers whose product is maximum and return the maximum product.
+input : nums = [1, 2, 3]
+output: 6
+
+
+
+### 17. Given a non empty string s, you may delet at most one character. judge wheather you can make it a palindrome.
+input : "aba"
+output: true
+
+
+
+### 18. Given a positive integer, check whaether it has alternative bits: namely, if two adjacent bits will always have different values.
+input : n = 5
+output: true
 
 
 
