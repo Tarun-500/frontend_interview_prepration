@@ -102,7 +102,37 @@ output: true
 
 
 
+### 19. Merge k sorted llinked lists and return it as one sorted list.
+input : 1 -> 10 -> 20
+        4 -> 11 -> 13
+        3 -> 8 -> 9
+output: 1 -> 3 -> 4 -> 8 -> 9 -> 10 -> 11 -> 13 -> 20
 
+
+
+### 20. Given a string S of lowercase alphabets, check if it is isogram or not. An isogram is a string in which no letter occurs more than once.
+input : 2,  Coding , CodingClub 
+output: 1, 0
+ 
+
+
+### 21. Given a string str and another string patt. Find the character in patt that is present at the minimum index in str. if no character of patt is present in str then print 'No character present'.
+input : codingMafia      mod
+output: o
+
+ 
+
+### 22. Given a number n, count minimum steps to minimize it to 1 according io the following criteria: if n is divisible by 2 then we may reduce n to n/2. if n is divisible by 3 then you may reduce n to n/3. Decrement n by 1.
+input : n = 10
+output: 3
+
+
+
+### 23. Given a sorted aarray and a value X, the floor of x is the largest element in array smaller than or equal to x. write efficient functions to find floor of x.
+input : arr[] = {10, 12, 19, 25, 30}, x = 20
+output: 25
+
+ 
 
 
 
