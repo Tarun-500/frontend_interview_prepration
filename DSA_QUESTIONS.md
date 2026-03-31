@@ -138,15 +138,16 @@ input : "abc"
 output: 3
  
 
-### 25. Given a positive 32-bit integer n, you need to find the smallest 32-bit integer which has exactly the same digits existing in the integer n and is greater in value than n. if no such positive 32-bit integer exists, you need to return -1..
+### 25. Given a positive 32-bit integer n, you need to find the smallest 32-bit integer which has exactly the same digits existing in the integer n and is greater in value than n. if no such positive 32-bit integer exists, you need to return -1.
 input : 12
 output: 21
  
+ 
 
-
-
-
-
+### 26. Subarray sum Equals K given an array of integers nums and an integerr k, return the total number of continuous subarrays whose sum equals to k.
+input : nums = [1, 1, 1], k = 2
+output:  2
+ 
 
 
 
