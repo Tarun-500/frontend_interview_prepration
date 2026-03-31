@@ -132,6 +132,10 @@ output: 3
 input : arr[] = {10, 12, 19, 25, 30}, x = 20
 output: 25
 
+
+### 24. Given a string, your task is to count how many palindromic substrings in this string. the substring with diffrent start indexes or end indexes are counted as different substrings even they consist of same characters.
+input : "abc"
+output: 3
  
 
 
