@@ -113,14 +113,14 @@ output: 1 -> 3 -> 4 -> 8 -> 9 -> 10 -> 11 -> 13 -> 20
 ### 20. Given a string S of lowercase alphabets, check if it is isogram or not. An isogram is a string in which no letter occurs more than once.
 input : 2,  Coding , CodingClub 
 output: 1, 0
- 
+
 
 
 ### 21. Given a string str and another string patt. Find the character in patt that is present at the minimum index in str. if no character of patt is present in str then print 'No character present'.
 input : codingMafia      mod
 output: o
 
- 
+
 
 ### 22. Given a number n, count minimum steps to minimize it to 1 according io the following criteria: if n is divisible by 2 then we may reduce n to n/2. if n is divisible by 3 then you may reduce n to n/3. Decrement n by 1.
 input : n = 10
@@ -136,25 +136,32 @@ output: 25
 ### 24. Given a string, your task is to count how many palindromic substrings in this string. the substring with diffrent start indexes or end indexes are counted as different substrings even they consist of same characters.
 input : "abc"
 output: 3
- 
+
+
 
 ### 25. Given a positive 32-bit integer n, you need to find the smallest 32-bit integer which has exactly the same digits existing in the integer n and is greater in value than n. if no such positive 32-bit integer exists, you need to return -1.
 input : 12
 output: 21
- 
- 
+
+
 
 ### 26. Subarray sum Equals K given an array of integers nums and an integerr k, return the total number of continuous subarrays whose sum equals to k.
 input : nums = [1, 1, 1], k = 2
 output:  2
-  
- 
+
+
 
 ### 27. Complex Number multiplication given two strings representing two complex numbers. you need to return a string representing their multiplication. note i2 = -1 according to the definition. 
 input: "1+1i", "1+1i"
 output: "0+2i"
 
 
+
+### 28. You are given two strings x and y. Return the minimum number of times you need to repeat string x so that string y becomes a subsequence (not necessarily contiguous, but order preserved) of the repeated string.
+ If it is impossible, return -1.
+Note:
+Repeating x 0 times gives ""
+Repeating x 1 time gives "abc" (if x = "abc")
 
 
 
