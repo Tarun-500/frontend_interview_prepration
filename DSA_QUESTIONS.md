@@ -225,3 +225,38 @@ Since "i" and "love" have the same frequency, we sort them alphabetically → "i
 
 
 
+
+
+#### Number of Longest Increasing Subsequences - Given an integer array `nums`, return the number of longest increasing subsequences.
+
+Notice that the sequence has to be strictly increasing.
+
+---
+
+## Example
+
+Input:
+nums = [1,3,5,4,7]
+
+Output:
+2
+
+---
+
+## Explanation
+
+The longest increasing subsequences are:
+
+* [1, 3, 5, 7]
+* [1, 3, 4, 7]
+
+So, the total number of longest increasing subsequences is 2.
+
+---
+
+## Constraints
+
+* 1 ≤ nums.length ≤ 2000
+* -10⁶ ≤ nums[i] ≤ 10⁶
+
+--- 
