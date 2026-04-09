@@ -157,14 +157,29 @@ output: "0+2i"
 
 
 
-### 28. You are given two strings x and y. Return the minimum number of times you need to repeat string x so that string y becomes a subsequence (not necessarily contiguous, but order preserved) of the repeated string.
- If it is impossible, return -1.
-Note:
-Repeating x 0 times gives ""
-Repeating x 1 time gives "abc" (if x = "abc")
+ 
 
+### 28. You are given two strings `x` and `y`. Return the **minimum number of times** you need to repeat string `x` so that string `y` becomes a **subsequence** (not necessarily contiguous, but order preserved) of the repeated string.
 
+If it is **impossible**, return `-1`.
 
+### Notes:
+- Repeating `x` **0 times** gives `""` (empty string)
+- Repeating `x` **1 time** gives `"abc"` (if `x = "abc"`)
+- Repeating `x` **2 times** gives `"abcabc"`
+
+---
+
+## Examples
+
+### Example 1
+```js
+Input: x = "abc", y = "acbac"
+Output: 2
+
+Explanation:
+- Repeat "abc" 1 time → "abc" → "acbac" is NOT a subsequence
+- Repeat "abc" 2 times → "abcabc" → "acbac" is a subsequence ✅
 
 
 
