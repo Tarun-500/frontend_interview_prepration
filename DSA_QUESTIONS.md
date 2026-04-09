@@ -157,6 +157,8 @@ output: "0+2i"
 
 
 
+
+
  
 
 ### 28. You are given two strings `x` and `y`. Return the **minimum number of times** you need to repeat string `x` so that string `y` becomes a **subsequence** (not necessarily contiguous, but order preserved) of the repeated string.
@@ -180,7 +182,46 @@ Output: 2
 Explanation:
 - Repeat "abc" 1 time → "abc" → "acbac" is NOT a subsequence
 - Repeat "abc" 2 times → "abcabc" → "acbac" is a subsequence ✅
+```
 
+
+
+
+
+### 29. Given a non-empty list of words, return the k most frequent elements.
+
+Your answer should be sorted by frequency from highest to lowest.
+If two words have the same frequency, then the word with the lower alphabetical order comes first.
+
+---
+
+## Example
+
+Input:
+words = ["i", "love", "leetcode", "i", "love", "coding"], k = 2
+
+Output:
+["i", "love"]
+
+---
+
+## Explanation
+
+* "i" appears 2 times
+* "love" appears 2 times
+* "leetcode" and "coding" appear 1 time
+
+Since "i" and "love" have the same frequency, we sort them alphabetically → "i" comes before "love"
+
+---
+
+## Constraints
+
+* 1 ≤ words.length ≤ 500
+* 1 ≤ k ≤ number of unique words
+* Words consist of lowercase English letters
+
+---
 
 
 
