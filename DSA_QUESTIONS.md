@@ -147,12 +147,12 @@ output: 21
 ### 26. Subarray sum Equals K given an array of integers nums and an integerr k, return the total number of continuous subarrays whose sum equals to k.
 input : nums = [1, 1, 1], k = 2
 output:  2
+  
  
 
-
-
-
-
+### 27. Complex Number multiplication given two strings representing two complex numbers. you need to return a string representing their multiplication. note i2 = -1 according to the definition. 
+input: "1+1i", "1+1i"
+output: "0+2i"
 
 
 
