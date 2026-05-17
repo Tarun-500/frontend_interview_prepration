@@ -312,7 +312,188 @@ The maximum length is 3.
 
 
 
+# 🟡 MEDIUM LEVEL
 
+## Partition Array Into K Equal Sum Subsets
+
+Given an array of integers nums and a positive integer k, determine whether it is possible to divide the array into k non-empty subsets whose sums are all equal.
+
+### Input
+```txt
+nums = [4,3,2,3,5,2,1]
+k = 4
+```
+
+### Output
+```txt
+true
+```
+
+---
+
+# 🔴 HARD LEVEL
+
+## Maximum Swap
+
+Given a non-negative integer, you can swap two digits at most once to get the maximum valued number.
+
+### Input
+```txt
+2736
+```
+
+### Output
+```txt
+7236
+```
+
+---
+
+# ⚫ VERY HARD LEVEL
+
+## 24 Game
+
+You have 4 cards each containing a number from 1 to 9. Determine whether they can be operated through +, -, *, /, (, ) to get the value 24.
+
+### Input
+```txt
+[4,1,8,7]
+```
+
+### Output
+```txt
+true
+```
+
+---
+
+# 🟢 EASY LEVEL
+
+## Count Pairs From Two Sorted Arrays
+
+Given two sorted arrays and a value x, count all pairs whose sum is equal to x.
+
+### Input
+```txt
+Array1 = [1,3,5,7]
+Array2 = [2,3,5,8]
+x = 10
+```
+
+### Output
+```txt
+2
+```
+
+---
+
+# ⚪ TRIVIAL LEVEL
+
+## Sort Characters Of String
+
+Given a string consisting of lowercase letters, arrange all its letters in ascending order.
+
+### Input
+```txt
+edcab
+```
+
+### Output
+```txt
+abcde
+```
+
+---
+
+# 🟢 EASY LEVEL
+
+## Contiguous Integers Array
+
+Given an array of integers (duplicates allowed), print Yes if it forms a set of contiguous integers, otherwise print No.
+
+### Input
+```txt
+[5,2,3,6,4,4,6,6]
+```
+
+### Output
+```txt
+Yes
+```
+
+---
+
+# 🟡 MEDIUM LEVEL
+
+## Numbers With Unique Digits
+
+Print all numbers having unique digits in a given range.
+
+### Input
+```txt
+10 20
+```
+
+### Output
+```txt
+10 12 13 14 15 16 17 18 19 20
+```
+
+---
+
+# 🟢 EASY LEVEL
+
+## Numbers Containing Only 3 and 7
+
+Print all numbers less than n having digits only 3 or 7.
+
+### Input
+```txt
+10
+```
+
+### Output
+```txt
+3 7
+```
+
+---
+
+# ⚫ VERY HARD LEVEL
+
+## Merge K Sorted Linked Lists
+
+Merge k sorted linked lists and return one sorted linked list.
+
+### Input
+```txt
+1 -> 10 -> 20
+4 -> 11 -> 13
+3 -> 8 -> 9
+```
+
+### Output
+```txt
+1 -> 3 -> 4 -> 8 -> 9 -> 10 -> 11 -> 13 -> 20
+```
+
+---
+
+# 🟢 EASY LEVEL
+
+## Maximum Distance Between Same Elements
+
+Find the maximum distance between two occurrences of an element.
+
+### Input
+```txt
+[1,1,2,2,2,1]
+```
+
+### Output
+```txt
+5
+```
 
 ## Difficulty Legend
 
