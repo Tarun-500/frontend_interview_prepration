@@ -3,6 +3,7 @@
 3) psudo class and element
 4) universal slector (*)
 5) Diffrence in em, rem, %, vh, and vw
+6) font-display: swap - is used to improve the loading experience of a website when using custom web fonts. Instead of waiting for the custom font to download, the browser immediately shows the text using a fallback font. Once the custom font finishes loading, it automatically replaces the fallback font.
 
 <details>
   <summary> <h3> 04) Background-Origin vs Background-Clip </h3> </summary>
