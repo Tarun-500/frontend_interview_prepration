@@ -1,8 +1,3 @@
-# CSS Interview Questions — Deduplicated & Organized
-
-Cleaned from the original list: duplicates removed, questions grouped by topic, and missing but commonly-asked questions added (marked ✨ **New**).
-
-
 ## Fundamentals & Box Model
 
 1. What are the different types of CSS?
@@ -519,6 +514,3 @@ Cleaned from the original list: duplicates removed, questions grouped by topic, 
 3. If you were interviewing a Senior Frontend Engineer for a FAANG company, what are the top 10 CSS topics you would test, and why?
 4. Design a CSS engine from scratch.
 5. How would you build the next generation of CSS?
-
----
-**Total questions: 463** (removed 5 exact duplicates from the original list of 446; added 22 missing questions on commonly-asked topics not previously covered.)
