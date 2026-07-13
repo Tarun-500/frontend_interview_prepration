@@ -1,10 +1,534 @@
 ## Fundamentals & Box Model
 
-1. What are the different types of CSS?
-2. What is the CSS Box Model?
-3. What is Intrinsic Sizing?
-4. What is CSS Painting Order?
-5. How does box-sizing: border-box work internally?
+<details>
+<summary><strong>1. What are the different types of CSS?</strong></summary>
+
+## Definition
+CSS can be added to HTML in **3 different ways**.
+
+### 1. Inline CSS
+CSS is written directly inside an HTML element using the `style` attribute.
+
+```html
+<p style="color:red;">Hello World</p>
+```
+
+### ✅ Pros
+- Quick for testing.
+- Highest priority.
+
+### ❌ Cons
+- Hard to maintain.
+- Not reusable.
+
+---
+
+### 2. Internal CSS
+CSS is written inside the `<style>` tag within the HTML file.
+
+```html
+<head>
+  <style>
+    p{
+      color: blue;
+    }
+  </style>
+</head>
+```
+
+### ✅ Pros
+- Good for single-page websites.
+- Easy to edit.
+
+### ❌ Cons
+- Cannot reuse in multiple pages.
+
+---
+
+### 3. External CSS ⭐ (Most Used)
+CSS is stored in a separate `.css` file.
+
+```html
+<link rel="stylesheet" href="style.css">
+```
+
+```css
+p{
+  color: green;
+}
+```
+
+### ✅ Pros
+- Reusable.
+- Faster loading (browser cache).
+- Easy maintenance.
+- Best practice.
+
+---
+
+## CSS Priority
+
+```
+Inline CSS
+      ↓
+Internal CSS
+      ↓
+External CSS
+```
+
+If specificity is the same, **Inline > Internal > External**.
+
+---
+
+## Real-Life Example
+
+Imagine decorating a house.
+
+- Inline CSS → Decorating one room only.
+- Internal CSS → Decorating one house.
+- External CSS → Hiring one designer for all houses.
+
+---
+
+## Interview Tip
+
+**Q:** Which CSS type is preferred in production?
+
+**Answer:**
+External CSS because it is reusable, maintainable, and improves performance.
+
+</details>
+
+---
+
+<details>
+<summary><strong>2. What is the CSS Box Model?</strong></summary>
+
+## Definition
+
+Every HTML element is treated as a **rectangular box**.
+
+The Box Model consists of **4 parts**.
+
+```
++---------------------------+
+|         Margin            |
+|  +---------------------+  |
+|  |      Border         |  |
+|  |  +---------------+  |  |
+|  |  |   Padding     |  |  |
+|  |  | +-----------+ |  |  |
+|  |  | | Content   | |  |  |
+|  |  | +-----------+ |  |  |
+|  |  +---------------+  |  |
+|  +---------------------+  |
++---------------------------+
+```
+
+---
+
+## 1. Content
+
+Actual text or image.
+
+```css
+width:200px;
+height:100px;
+```
+
+---
+
+## 2. Padding
+
+Space between content and border.
+
+```css
+padding:20px;
+```
+
+---
+
+## 3. Border
+
+Wraps around padding.
+
+```css
+border:2px solid black;
+```
+
+---
+
+## 4. Margin
+
+Space outside the element.
+
+```css
+margin:30px;
+```
+
+---
+
+## Example
+
+```css
+.box{
+    width:200px;
+    padding:20px;
+    border:5px solid black;
+    margin:30px;
+}
+```
+
+Total width becomes
+
+```
+200
++20+20
++5+5
+=250px
+```
+
+Margin is outside the element.
+
+---
+
+## Real-Life Example
+
+Think of a mobile phone.
+
+- Screen → Content
+- Cover → Padding
+- Phone Body → Border
+- Space around phone → Margin
+
+---
+
+## Interview Tip
+
+**Q:** Does width include padding?
+
+**Answer:**
+No.
+
+Unless you use
+
+```css
+box-sizing:border-box;
+```
+
+</details>
+
+---
+
+<details>
+<summary><strong>3. What is Intrinsic Sizing?</strong></summary>
+
+## Definition
+
+Intrinsic sizing means the browser automatically calculates the size of an element based on its content.
+
+You don't specify width or height.
+
+The content decides the size.
+
+---
+
+## Example
+
+```html
+<button>Submit</button>
+```
+
+The button becomes only as wide as the text.
+
+---
+
+## CSS Intrinsic Keywords
+
+### max-content
+
+Makes the element as wide as needed.
+
+```css
+width:max-content;
+```
+
+Example
+
+```
+Hello World
+```
+
+Width becomes exactly enough to fit the text.
+
+---
+
+### min-content
+
+Makes the element as small as possible.
+
+```css
+width:min-content;
+```
+
+Words wrap into multiple lines.
+
+---
+
+### fit-content
+
+Takes only required space but doesn't exceed available width.
+
+```css
+width:fit-content;
+```
+
+---
+
+### auto
+
+Browser decides automatically.
+
+---
+
+## Real-Life Example
+
+Imagine a suitcase.
+
+- max-content → Big enough for everything.
+- min-content → Fold everything tightly.
+- fit-content → Fits nicely without wasting space.
+
+---
+
+## Interview Tip
+
+Intrinsic sizing is useful for:
+
+- Buttons
+- Tags
+- Badges
+- Chips
+- Dynamic content
+
+</details>
+
+---
+
+<details>
+<summary><strong>4. What is CSS Painting Order?</strong></summary>
+
+## Definition
+
+Painting Order is the sequence in which the browser draws elements on the screen.
+
+The browser doesn't draw everything together.
+
+It paints one layer after another.
+
+---
+
+## Basic Painting Order
+
+```
+Background
+      ↓
+Border
+      ↓
+Text
+      ↓
+Box Shadow
+      ↓
+Outline
+```
+
+---
+
+## Example
+
+```css
+.box{
+    background:red;
+    border:5px solid black;
+    color:white;
+}
+```
+
+Browser paints
+
+```
+1 Background
+2 Border
+3 Text
+```
+
+---
+
+## With z-index
+
+```css
+.box1{
+    position:absolute;
+    z-index:1;
+}
+
+.box2{
+    position:absolute;
+    z-index:2;
+}
+```
+
+The larger `z-index` is painted on top.
+
+---
+
+## Real-Life Example
+
+Imagine painting a wall.
+
+1 Paint wall.
+2 Add border.
+3 Stick poster.
+4 Add decorations.
+
+Same concept.
+
+---
+
+## Interview Tip
+
+Painting Order is different from:
+
+- Stacking Context
+- z-index
+
+Painting Order = **How one element is drawn internally.**
+
+Stacking Context = **Which element appears above another.**
+
+</details>
+
+---
+
+<details>
+<summary><strong>5. How does <code>box-sizing: border-box</code> work internally?</strong></summary>
+
+## Definition
+
+Normally,
+
+```css
+box-sizing:content-box;
+```
+
+means width applies only to the **content**.
+
+With
+
+```css
+box-sizing:border-box;
+```
+
+the width includes:
+
+- Content
+- Padding
+- Border
+
+---
+
+## Without border-box
+
+```css
+.box{
+    width:200px;
+    padding:20px;
+    border:5px solid;
+}
+```
+
+Actual width
+
+```
+200
++20+20
++5+5
+=250px
+```
+
+---
+
+## With border-box
+
+```css
+.box{
+    width:200px;
+    padding:20px;
+    border:5px solid;
+    box-sizing:border-box;
+}
+```
+
+Actual width
+
+```
+200px
+```
+
+The browser automatically reduces the content width.
+
+Example
+
+```
+Content = 150px
+Padding = 40px
+Border = 10px
+
+Total = 200px
+```
+
+---
+
+## Why use it?
+
+- Easier layouts
+- Predictable sizing
+- Better responsive design
+- Prevents width calculation issues
+
+---
+
+## Real-Life Example
+
+Imagine buying a **200L suitcase**.
+
+### content-box
+
+200L is only the inside.
+
+Handles and wheels make it bigger.
+
+### border-box
+
+Entire suitcase, including handles and wheels, is exactly 200L.
+
+---
+
+## Interview Tip
+
+Almost every project starts with:
+
+```css
+*{
+    box-sizing:border-box;
+}
+```
+
+This makes width and height calculations much easier.
+
+</details>
+
+---------------------------------------------------------------------------------------------------------
 6. Explain GPU Acceleration in CSS.
 7. What are contain, content-visibility, and will-change?
 8. What is min-content, max-content, and fit-content?
