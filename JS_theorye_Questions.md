@@ -196,3 +196,33 @@ console.log(a === b); // true
 
 53) unary operator
 54) threads
+
+What is a closure in JavaScript, and how does it allow an inner function to access outer scope variables?
+
+How do you create private variables in JavaScript using closures?
+
+What will for (var i = 0; i < 3; i++) { setTimeout(() => console.log(i), 1000); } output, and how do you fix it using a closure?
+
+What is hoisting in JavaScript, and how does the engine handle variable vs. function declarations?
+
+What is the Temporal Dead Zone (TDZ), and how does hoisting differ between var, let, and const?
+
+What happens if you call a function expression before defining it compared to a function declaration?
+
+How does prototypal inheritance work in JavaScript, and what is the difference between __proto__ and prototype?
+
+When you access a property on an object, how exactly does JS traverse the prototype chain, and where does it end?
+
+What is the difference between Object.create(null) and creating a standard object using {}?
+
+What are the three states of a Promise, and how does it solve the issue of callback hell?
+
+How do Promise.all(), Promise.allSettled(), Promise.race(), and Promise.any() differ?
+
+How does the Event Loop handle Promise microtasks versus setTimeout macrotasks, and which executes first?
+
+What is recursion, and why is a base case mandatory?
+
+What causes a Maximum Call Stack Size Exceeded error, and how do you prevent it?
+
+What is Tail Call Optimization (TCO), and how does call stack memory behave during deep recursion?
