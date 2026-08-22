@@ -1,5 +1,6 @@
 <details>
-<summary>  ## Types of APIs — Interview Notes</summary>
+<summary> <h2> Types of APIs — Interview Notes </h2> </summary>
+  
 ### 1. REST API
 - REST = Representational State Transfer.
 - Most commonly used API architecture for web/mobile apps.
