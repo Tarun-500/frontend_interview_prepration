@@ -1,6 +1,14 @@
-## Reverse a String Without Using .reverse();
----
-## Find the largest number in an array without using Math.max().
+## 1) Reverse a String Without Using .reverse();
+      const ad = "tarun jain";   output: niaj nurat
+
+## 2) Find the largest number in an array without using Math.max().
+      const arr = [10, 5, 25, 8, 15];  output: 25
+
+## 3) Find the smallest number in an array without using Math.min().  
+      const arr = [10, 5, 25, 8, 15];  output: 5
+
+## 4) Remove duplicate values from an array without using Set.
+      const arr = [1, 2, 2, 3, 4, 4, 5];  output:  [1, 2, 3, 4, 5]
 
 
 
