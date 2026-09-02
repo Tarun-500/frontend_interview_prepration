@@ -24,6 +24,9 @@ for (let i = 0; i < 5; i++) {
 console.log(i); // This will throw an error because 'i' is not defined outside the loop
 
  
+## 5) What is event Delegation? 
+      Event Delegation is a JS technique where we attach a single event listener to a parent element instead of adding multiple event listeners to individual            child elements.
+
 ## 6) This keyword used in JS  -  this in JavaScript refers to the current object or context. 
 
 const person = {
