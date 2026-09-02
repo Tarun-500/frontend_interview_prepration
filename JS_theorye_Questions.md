@@ -24,8 +24,15 @@ for (let i = 0; i < 5; i++) {
 console.log(i); // This will throw an error because 'i' is not defined outside the loop
 
  
-## 5) What is event Delegation? 
-      Event Delegation is a JS technique where we attach a single event listener to a parent element instead of adding multiple event listeners to individual            child elements.
+## 005) What is event Delegation? 
+    Event Delegation is a JS technique where we attach a single event listener to a parent element instead of adding multiple event listeners to individual            child elements.
+
+## 006) What is event handling?
+      Event handling means making a webpage interactive whenever a user does any action like click, hover, drag, type, or other actions.
+
+## 007) What is event loop?
+    The Event Loop is not a part of our code; it is a JavaScript mechanism. Since JavaScript is a single-threaded language, it can only do one task at a time. The Event Loop sends time-taking requests to the background until the currently running tasks in the stack are completed, keeping the website interactive and working.  
+      
 
 ## 6) This keyword used in JS  -  this in JavaScript refers to the current object or context. 
 
@@ -172,6 +179,8 @@ const a = Singleton();
 const b = Singleton();
 
 console.log(a === b); // true
+
+```
 
 
 32) Factory Pattern in JavaScript
