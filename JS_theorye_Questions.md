@@ -28,11 +28,18 @@ console.log(i); // This will throw an error because 'i' is not defined outside t
     Event Delegation is a JS technique where we attach a single event listener to a parent element instead of adding multiple event listeners to individual            child elements.
 
 ## 006) What is event handling?
-      Event handling means making a webpage interactive whenever a user does any action like click, hover, drag, type, or other actions.
+      Event handling means making a webpage interactive whenever a user does any action like clicking, hovering, dragging, typing, or other actions.
 
 ## 007) What is event loop?
-    The Event Loop is not a part of our code; it is a JavaScript mechanism. Since JavaScript is a single-threaded language, it can only do one task at a time. The Event Loop sends time-taking requests to the background until the currently running tasks in the stack are completed, keeping the website interactive and working.  
-      
+    The Event Loop is not a part of our code; it is a JavaScript mechanism. Since JavaScript is a single-threaded language, it can only do one task at a time. The Event Loop sends time-consuming requests to the background until the currently running tasks in the stack are completed, keeping the website interactive and working.  
+
+## 008) What is event bubbling?
+    Event bubbling works from bottom to top. If I click on any child element, the event will travel up to its parent elements, and this is called Event Bubbling.
+
+## 009) What is event capturing?
+    Even if you click a child element, the browser starts triggering the event from the highest parent element first, and then travels straight down to that child.
+
+## 010) 
 
 ## 6) This keyword used in JS  -  this in JavaScript refers to the current object or context. 
 
